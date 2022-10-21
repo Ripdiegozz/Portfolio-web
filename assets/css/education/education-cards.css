@@ -1,37 +1,44 @@
 .education-card{
+    display: flex;
     padding: 10px;
     margin: 0 auto 1em auto;
-    align-items: center;
-    display: flex;
     border: 1px solid #E2E8F0;
     border-radius: 7px;
-    flex-direction: column;
-    width: 90%;
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
+    width: 80%;
 }
 
-.education-card img{
-    width: 80%;
-    padding: 15px;
+.education__card--icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.edcucation__card--text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
 }
 
 .education-card h2{
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 400;
-    margin: 10px 0 0 0;
     font-family: 'Titillium Web', sans-serif;
 }
 
 .education-card h3{
-    margin: 5px 0 0 0;
-    text-align: center;
+    font-size: 16px;
     font-family: 'Martel', serif;
 }
+
 
 .education-card p{
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    grid-row: 3 / 3;
+    grid-column: 2 / 3;
 }
