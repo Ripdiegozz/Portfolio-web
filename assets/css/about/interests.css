@@ -1,0 +1,39 @@
+.interests{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    display: flex;
+    flex-flow: column;
+}
+
+.interests h2{
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.interests i{
+    font-size: 1.2em;
+    margin-right: 15px;
+}
+
+.interests__box{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    align-items: center;
+}
+
+.hobbies__card{
+    text-align: center;
+}
+
+.hobbies__card i{
+    font-size: 30px;
+}
+
+.hobbies__card p{
+    font-size: 18px;
+    font-family: 'Martel', serif;
+    font-weight: bold;
+}

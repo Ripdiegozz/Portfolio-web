@@ -1,0 +1,14 @@
+.presentation__box--image{
+    display: flex;
+    justify-content: center;
+}
+
+.presentation__box--image img{
+    width: 100%;
+    height: 300px;
+    border-radius: 25%;
+    -webkit-border-radius: 25%;
+    -moz-border-radius: 25%;
+    -ms-border-radius: 25%;
+    -o-border-radius: 25%;
+}

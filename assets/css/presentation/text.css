@@ -1,0 +1,18 @@
+.presentation__box--text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.presentation__box--text h2{
+    margin: 0 0 10px 0.7em;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 550;
+}
+
+.presentation__box--text h3{
+    margin: 0 0 0 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}

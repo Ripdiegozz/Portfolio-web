@@ -1,0 +1,19 @@
+.skills__box{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3em;
+}
+
+.skills__box i{
+    font-size: 35px;
+    margin-right: 15px;
+}
+
+.skills__box h2{
+    font-size: 35px;
+    font-family: 'Titillium Web', sans-serif;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+

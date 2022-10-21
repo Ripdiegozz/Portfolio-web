@@ -1,0 +1,19 @@
+.proyects__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+    width: 100%;
+    padding-bottom: 2em;
+}
+
+.proyects__box h2{
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 35px;
+}
+
+.proyects__box i{
+    margin-right: 15px;
+    font-size: 35px
+}

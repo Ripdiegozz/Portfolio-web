@@ -1,0 +1,125 @@
+/*
+FONTS:
+BODY AND SUBTITLES
+font-family: 'Martel', serif;
+font-family: 'Montserrat', sans-serif;
+
+TITLES
+font-family: 'Titillium Web', sans-serif;
+
+*/
+
+
+/* DARK MODE */
+
+body.dark nav{
+    background: #1A202C;
+    color: whitesmoke;
+}
+
+body.dark .switch__box{
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+body.dark .menu__box{
+    background: #1A202C;
+}
+
+body.dark .menu__box .menu__box--item{
+    color: whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+
+}
+
+body.dark .menu__box .menu__box--item:hover{
+    color: #a1a1a1;
+    border-bottom: 1px solid #8d8c8c;
+
+}
+
+body.dark .menu-btn{
+    background: rgba(255, 255, 255, 0.08);
+    color: whitesmoke;
+}
+
+
+body.dark .main__box{
+    background: #1A202C;
+    color: whitesmoke;
+}
+
+body.dark .presentation__box--social i{
+    color: whitesmoke;
+}
+
+body.dark #logo-alura{
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+body.dark #scrollTop{
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+
+
+/*Body boxes style*/
+.main__box{
+    width: 100%;
+    padding-top: 3.7em;
+    background: rgb(255, 255, 255);
+}
+
+#scrollTop{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: -100px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+#scrollTop a img{
+    width: 40px;
+    height: 40px;
+}
+
+footer{
+    background: rgb(66, 66, 66);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+footer h2{
+    padding: 20px;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+footer ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul a{
+    font-size: 60px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+footer p{
+    color: whitesmoke;
+    font-family: 'Titillium Web', sans-serif;
+}
