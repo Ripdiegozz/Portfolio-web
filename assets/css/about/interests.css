@@ -24,16 +24,17 @@
     align-items: center;
 }
 
-.hobbies__card{
-    text-align: center;
-}
-
 .hobbies__card i{
     font-size: 30px;
+    text-align: center;
+    margin: 10px 0  0 0;
+    width: 100%;
 }
 
 .hobbies__card p{
     font-size: 18px;
     font-family: 'Martel', serif;
     font-weight: bold;
+    text-align: center;
+
 }
