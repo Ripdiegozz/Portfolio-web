@@ -58,7 +58,10 @@ contact_btn.addEventListener('click', ()=>{
         left: 0,
         behavior: "smooth"
     });
-})
+    
+    menu.classList.toggle('active');
+
+});
 
 about_btn.addEventListener('click', ()=>{
     window.scroll({
@@ -66,7 +69,10 @@ about_btn.addEventListener('click', ()=>{
         left: 0,
         behavior: "smooth"
     });
-})
+    
+    menu.classList.toggle('active');
+
+});
 
 skills_btn.addEventListener('click', ()=>{
     window.scroll({
@@ -75,8 +81,9 @@ skills_btn.addEventListener('click', ()=>{
         behavior: "smooth"
     });
 
+    menu.classList.toggle('active');
 
-})
+});
 studies_btn.addEventListener('click', ()=>{
     window.scroll({
         top: 2150,
@@ -84,12 +91,17 @@ studies_btn.addEventListener('click', ()=>{
         behavior: "smooth"
     });
 
-})
+    menu.classList.toggle('active');
+
+});
+
 proyects_btn.addEventListener('click', ()=>{
     window.scroll({
         top: 3150,
         left: 0,
         behavior: "smooth"
     });
+    
+    menu.classList.toggle('active');
 
-})
+});
