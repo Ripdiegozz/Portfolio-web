@@ -58,18 +58,16 @@ contact_btn.addEventListener('click', ()=>{
         left: 0,
         behavior: "smooth"
     });
-
-    menu.classList.toggle('active');
 })
+
 about_btn.addEventListener('click', ()=>{
     window.scroll({
         top: 670,
         left: 0,
         behavior: "smooth"
     });
-
-    menu.classList.toggle('active');
 })
+
 skills_btn.addEventListener('click', ()=>{
     window.scroll({
         top: 1650,
@@ -77,23 +75,21 @@ skills_btn.addEventListener('click', ()=>{
         behavior: "smooth"
     });
 
-    menu.classList.toggle('active');
+
 })
 studies_btn.addEventListener('click', ()=>{
     window.scroll({
-        top: 400,
+        top: 2150,
         left: 0,
         behavior: "smooth"
     });
 
-    menu.classList.toggle('active');
 })
 proyects_btn.addEventListener('click', ()=>{
     window.scroll({
-        top: 400,
+        top: 3150,
         left: 0,
         behavior: "smooth"
     });
 
-    menu.classList.toggle('active');
 })
