@@ -34,7 +34,6 @@
 .hobbies__card p{
     font-size: 18px;
     font-family: 'Martel', serif;
-    font-weight: bold;
     text-align: center;
-
+    font-weight:bolder;
 }

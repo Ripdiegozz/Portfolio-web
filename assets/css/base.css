@@ -1,13 +1,6 @@
-/*
-FONTS:
-BODY AND SUBTITLES
-font-family: 'Martel', serif;
-font-family: 'Montserrat', sans-serif;
-
-TITLES
-font-family: 'Titillium Web', sans-serif;
-
-*/
+html{
+    scroll-behavior: smooth;
+}
 
 
 /* DARK MODE */
@@ -63,6 +56,18 @@ body.dark #scrollTop{
     -webkit-filter: invert(100%);
 }
 
+body.dark .scrolldown{
+    border: calc(var(--sizeX) / 10) solid rgb(255, 255, 255);
+}
+
+body.dark .scrolldown::before{
+    background-color: rgb(255, 255, 255);
+}
+
+body.dark .chevrondown{
+    border: solid rgba(255, 255, 255, 0.76);
+    
+}
 
 
 /*Body boxes style*/
@@ -91,8 +96,100 @@ body.dark #scrollTop{
     height: 40px;
 }
 
+/* From uiverse.io by @mrhyddenn */
+.scrolldown {
+    --sizeX: 25px;
+    --sizeY: 45px;
+    display: none;
+    position: relative;
+    width: var(--sizeX);
+    height: var(--sizeY);
+    border: calc(var(--sizeX) / 10) solid #080e13d5;
+    border-radius: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.scrolldown::before {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #080e13d5;
+    border-radius: 100%;
+    animation: scrolldown-anim 2s infinite;
+    box-sizing: border-box;
+    box-shadow: 0px -5px 3px 1px #2a547066;
+}
+
+@keyframes scrolldown-anim {
+0% {
+    opacity: 0;
+    height: 6px;
+}
+
+40% {
+    opacity: 1;
+    height: 10px;
+}
+
+80% {
+    transform: translate(0, 20px);
+    height: 10px;
+    opacity: 0;
+}
+
+100% {
+    height: 3px;
+    opacity: 0;
+}
+}
+
+.chevrons {
+    padding: 6px 0 0 0;
+    margin-left: -3px;
+    margin-top: 48px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chevrondown {
+    margin-top: -6px;
+    position: relative;
+    border: solid #080e13d5;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+}
+
+.chevrondown:nth-child(odd) {
+    animation: pulse54012 500ms ease infinite alternate;
+}
+
+.chevrondown:nth-child(even) {
+    animation: pulse54012 500ms ease infinite alternate 250ms;
+}
+
+@keyframes pulse54012 {
+    from {
+        opacity: 0;
+    }
+  
+    to {
+      opacity: 0.5;
+    }
+}
+
 footer{
-    background: rgb(66, 66, 66);
+    background: rgb(33, 38, 49);
     display: flex;
     flex-direction:column;
     align-items: center;

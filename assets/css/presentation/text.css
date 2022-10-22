@@ -3,7 +3,15 @@
     flex-direction: column;
     align-items: center;
     padding: 0 15px;
+    background-image: linear-gradient(to right, #f12711, #db9c13);
+    color: transparent;
+    -webkit-background-clip: text;
 }
+
+body.dark .presentation__box--text{
+    background-image: linear-gradient(to right, #acb6e5, #86fde8);
+}
+
 
 .presentation__box--text h2{
     margin: 0 0 10px 0.7em;
@@ -14,5 +22,5 @@
 .presentation__box--text h3{
     margin: 0 0 0 1em;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: bold;
 }

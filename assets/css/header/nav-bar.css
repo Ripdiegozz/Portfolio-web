@@ -38,7 +38,7 @@ nav{
     left: 0;
     line-height: 100px;
     position: fixed;
-    top: 5vh;
+    top: 4.7vh;
     padding: 0;
     transform: translate(-100%);
     -webkit-transform: translate(-100%);
@@ -69,7 +69,7 @@ nav{
 }
 
 .menu__box .menu__box--item{
-    color: #8d8c8c;
+    color: #575757;
     font-family: 'Titillium Web', sans-serif;
     border-bottom: 1px solid #8d8c8c;
     font-weight: bold;

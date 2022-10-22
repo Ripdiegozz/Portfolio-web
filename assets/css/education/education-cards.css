@@ -1,5 +1,6 @@
 .education-card{
     display: flex;
+    flex-wrap: wrap;
     padding: 10px;
     margin: 0 auto 1em auto;
     border: 1px solid #E2E8F0;
@@ -9,9 +10,12 @@
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
     width: 80%;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
 }
 
 .education__card--icons{
+    width: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -19,13 +23,14 @@
 
 .edcucation__card--text{
     display: flex;
+    width: 75%;
     flex-direction: column;
     row-gap: 10px;
 }
 
 .education-card h2{
     font-size: 20px;
-    font-weight: 400;
+    font-weight: normal;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -39,6 +44,4 @@
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    grid-row: 3 / 3;
-    grid-column: 2 / 3;
 }

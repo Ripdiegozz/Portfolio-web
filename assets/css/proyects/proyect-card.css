@@ -10,6 +10,7 @@
     -moz-border-radius: 7px;
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .proyect__card img{
@@ -25,17 +26,20 @@
     -webkit-border-radius: 5px;
 }
 
-.proyect__card h2{
+.proyect__card--text{
+    width: 100%;
+}
+
+.proyect__card--text h2{
     text-align: center;
     font-size: 28px;
     margin: 10px 0 5px 0;
     font-family: 'Titillium Web', sans-serif;
 }
 
-.proyect__card p{
-    font-weight: bold;
+.proyect__card--text p{
     text-align: center;
-    margin: 5px 0 15px 0;
+    margin: 15px auto 15px auto;
     width: 250px;
     font-family: 'Martel', serif;
 }

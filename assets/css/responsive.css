@@ -1,2 +1,680 @@
-@media screen and (max-width: 800px){
+@media screen and (min-width: 600px) and (max-width: 768px){
+    nav{
+        height: 9vh;
+    }
+
+    .switch__box{
+        height: 42px;
+        width: 42px;
+    }
+
+    .menu-btn{
+        height: 42px;
+        width: 42px;
+    }
+
+    .menu__box{
+        top: 6.8vh;
+    }
+
+    .presentation__box{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .about__box{
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .interests{
+        width: 100%;
+
+    }
+
+    .interests__box{
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 20px;
+    }
+
+    .education-card{
+        width: 60%;
+        margin: 0 auto 2em auto;
+    }
+
+    .proyects__box h2{
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .proyect__card{
+        width: 65%;
+        padding: 15px;
+        
+    }
+
+    footer ul{
+        justify-content: center;
+        column-gap: 5vw;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    nav{
+        height: 9vh;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: 40px;
+    }
+
+    .header__logo a{
+        display: flex;
+        text-decoration: none;
+    }
+
+    .header__logo a h1{
+        display: inline;
+        color: #000;
+        font-family: "Titillium Web", sans-serif;
+        margin-left: 6px;
+    }
+
+    body.dark .header__logo a h1{
+        color: aliceblue;
+    }
+
+    .switch__box{
+        order: 3;
+        height: 42px;
+        width: 42px;
+    }
+
+    body.dark .menu__box{
+        background: none;
+    }
+
+    .menu__box{
+        background: none;
+        flex-direction: row;
+        position:static;
+        transform: translate(0);
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+        height: auto;
+        width: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        line-height:normal;
+        transition: 0s;
+        -webkit-transition: 0s;
+        -moz-transition: 0s;
+        -ms-transition: 0s;
+        -o-transition: 0s;
+    }
+
+    .menu__box .menu__box--item{
+        border-bottom: none;
+    }
+
+    .menu-btn{
+        display: none;
+        height: 42px;
+        width: 42px;
+    }
+
+    .presentation__box{
+        display: grid;
+        grid-template-columns: 1.4fr 1.1fr; 
+        grid-template-rows: 380px 150px; 
+        gap: 0px 0px; 
+    }
+
+    .presentation__box--image{
+        grid-column: 2 / 3;
+    }
+
+    .presentation__box--image img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .presentation__box--text{
+        grid-column: 1 / 2;
+        grid-row: 1/ 2;
+    }
+
+    .presentation__box--text h2{
+        font-size: 34px;
+    }
+
+    .presentation__box--text h3{
+        padding-top: 0.5em;
+        font-size: 20px;
+        margin-left: 1.2em;
+    }
+
+    .presentation__box--social div{
+        justify-content: center;
+        column-gap: 60px;
+    }
+
+    .scrolldown{
+        display: block;
+        margin-top: 2em;
+    }
+
+    .about__box{
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 1em;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .about__text{
+        width: 40%;
+        padding-bottom: 0;
+    }
+
+    .about__title{
+        padding-top: 1.5em;
+    }
+
+    .languages{
+        width: 30%;
+        justify-content: center;
+    }
+
+    .interests{
+        width: 100%;
+        padding-top: 10px;
+    }
+    
+    .interests h2{
+        padding-bottom: 10px;
+    }
+
+    .interests__box{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .hobbies__card i{
+        margin: 0;
+    }
+
+    .skills__box{
+        padding-bottom: 4em;
+    }
+
+    .education__box{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .education-card{
+        width: 40%;
+        margin: 0 auto 2em auto;
+    }
+
+    .proyects__box{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .proyects__box h2{
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .proyect__card{
+        width: 40%;
+        padding: 15px;
+        
+    }
+
+    footer ul{
+        justify-content: center;
+        column-gap: 5vw;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+    nav{
+        height: 8vh;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: 40px;
+    }
+
+    .header__logo a{
+        display: flex;
+        text-decoration: none;
+    }
+
+    .header__logo a h1{
+        display: inline;
+        color: #000;
+        font-family: "Titillium Web", sans-serif;
+        margin-left: 6px;
+    }
+
+    body.dark .header__logo a h1{
+        color: aliceblue;
+    }
+
+    .switch__box{
+        order: 3;
+        height: 42px;
+        width: 42px;
+    }
+
+    body.dark .menu__box{
+        background: none;
+    }
+
+    .menu__box{
+        background: none;
+        flex-direction: row;
+        position:static;
+        transform: translate(0);
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+        height: auto;
+        width: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        line-height:normal;
+        transition: 0s;
+        -webkit-transition: 0s;
+        -moz-transition: 0s;
+        -ms-transition: 0s;
+        -o-transition: 0s;
+    }
+
+    .menu__box .menu__box--item{
+        border-bottom: none;
+    }
+
+    .menu-btn{
+        display: none;
+        height: 42px;
+        width: 42px;
+    }
+
+    .presentation__box{
+        display: grid;
+        width: 90%;
+        margin: 2em auto;
+        grid-template-columns: 1.4fr 1.1fr; 
+        grid-template-rows: 380px 150px; 
+        gap: 0px 0px; 
+    }
+
+    .presentation__box--image{
+        grid-column: 2 / 3;
+    }
+
+    .presentation__box--image img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .presentation__box--text{
+        grid-column: 1 / 2;
+        grid-row: 1/ 2;
+    }
+
+    .presentation__box--text h2{
+        font-size: 34px;
+    }
+
+    .presentation__box--text h3{
+        padding-top: 0.5em;
+        font-size: 20px;
+        margin-left: 1.2em;
+    }
+
+    .presentation__box--social div{
+        justify-content: center;
+        column-gap: 60px;
+    }
+
+    .scrolldown{
+        display: block;
+        margin-top: 2em;
+    }
+
+    .about__box{
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 1em;
+        display: flex;
+        flex-flow: row wrap;
+        column-gap: 60px;
+    }
+    
+    .about__text{
+        width: 30%;
+        margin: 0 0 0 auto;
+    }
+
+    .about__title{
+        padding-top: 1.5em;
+    }
+
+    .languages{
+        width: 30%;
+        justify-content: center;
+        margin: 0 auto 0 0;
+    }
+
+    .interests{
+        width: 100%;
+        padding-top: 10px;
+    }
+    
+    .interests h2{
+        padding-bottom: 10px;
+    }
+
+    .interests__box{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .hobbies__card i{
+        margin: 0;
+    }
+
+    .skills__box{
+        padding-bottom: 4em;
+    }
+
+    .cards__container{
+        justify-content: space-evenly;
+    }
+
+    .education__box{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .education-card{
+        width: 40%;
+        margin: 0 auto 2em auto;
+    }
+
+    .proyects__box{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .proyects__box h2{
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .proyect__card{
+        width: 70%;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    .proyect__card img{
+        grid-column: 1 / 2;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .proyect__card h2, .proyect__card p, .proyect__buttons{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    } 
+
+    .proyect__buttons{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .proyect__buttons a{
+        width: 35%;
+    }
+
+    footer ul{
+        justify-content: center;
+        column-gap: 5vw;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    nav{
+        height: 8vh;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: 40px;
+    }
+
+    .header__logo a{
+        display: flex;
+        text-decoration: none;
+    }
+
+    .header__logo a h1{
+        display: inline;
+        color: #000;
+        font-family: "Titillium Web", sans-serif;
+        margin-left: 6px;
+    }
+
+    body.dark .header__logo a h1{
+        color: aliceblue;
+    }
+
+    .switch__box{
+        order: 3;
+        height: 42px;
+        width: 42px;
+    }
+
+    body.dark .menu__box{
+        background: none;
+    }
+
+    .menu__box{
+        background: none;
+        flex-direction: row;
+        position:static;
+        transform: translate(0);
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+        height: auto;
+        width: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        line-height:normal;
+        transition: 0s;
+        -webkit-transition: 0s;
+        -moz-transition: 0s;
+        -ms-transition: 0s;
+        -o-transition: 0s;
+    }
+
+    .menu__box .menu__box--item{
+        border-bottom: none;
+    }
+
+    .menu-btn{
+        display: none;
+        height: 42px;
+        width: 42px;
+    }
+
+    .presentation__box{
+        display: grid;
+        width: 90%;
+        margin: 2em auto;
+        grid-template-columns: 1.4fr 1.1fr; 
+        grid-template-rows: 380px 150px; 
+        gap: 0px 0px; 
+    }
+
+    .presentation__box--image{
+        grid-column: 2 / 3;
+    }
+
+    .presentation__box--image img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .presentation__box--text{
+        grid-column: 1 / 2;
+        grid-row: 1/ 2;
+    }
+
+    .presentation__box--text h2{
+        font-size: 34px;
+    }
+
+    .presentation__box--text h3{
+        padding-top: 0.5em;
+        font-size: 20px;
+        margin-left: 1.2em;
+    }
+
+    .presentation__box--social div{
+        justify-content: center;
+        column-gap: 60px;
+    }
+
+    .scrolldown{
+        display: block;
+        margin-top: 3em;
+    }
+
+    .about__box{
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 1em;
+        display: flex;
+        flex-flow: row wrap;
+        column-gap: 60px;
+    }
+    
+    .about__text{
+        width: 30%;
+        margin: 0 0 0 auto;
+    }
+
+    .about__title{
+        padding-top: 1.5em;
+    }
+
+    .languages{
+        width: 30%;
+        justify-content: center;
+        margin: 0 auto 0 0;
+    }
+
+    .interests{
+        width: 100%;
+        padding-top: 10px;
+    }
+    
+    .interests h2{
+        padding-bottom: 10px;
+    }
+
+    .interests__box{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .hobbies__card i{
+        margin: 0;
+    }
+
+    .skills__box{
+        padding-bottom: 4em;
+    }
+
+    .cards__container{
+        justify-content: space-evenly;
+    }
+
+    .education__box{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .education-card{
+        width: 40%;
+        margin: 0 auto 2em auto;
+    }
+
+    .education__card--desc{
+        width: 90%;
+    }
+
+    .proyects__box{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .proyects__box h2{
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .proyect__card{
+        width: 70%;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    .proyect__card img{
+        grid-column: 1 / 2;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .proyect__card h2, .proyect__card p, .proyect__buttons{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    } 
+
+    .proyect__buttons{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .proyect__buttons a{
+        width: 35%;
+    }
+
+    footer ul{
+        justify-content: center;
+        column-gap: 5vw;
+    }
 }
