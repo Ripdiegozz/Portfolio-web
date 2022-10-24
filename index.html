@@ -41,19 +41,19 @@
             </div>
             <ul class="menu__box" id="menu__box">
                 <li>
-                    <span class="menu__box--item" id="contact-btn">Contact</span>
+                    <a href="#contact" class="menu__box--item">Contact</a>
                 </li>
                 <li>
-                    <span class="menu__box--item" id="about-btn">About me</span>
+                    <a href="#about" class="menu__box--item">About me</a>
                 </li>
                 <li>
-                    <span class="menu__box--item" id="skills-btn">Skills</span>
+                    <a href="#skills" class="menu__box--item">Skills</a>
                 </li>
                 <li>
-                    <span class="menu__box--item" id="studies-btn">Education</span>
+                    <a href="#education" class="menu__box--item">Education</a>
                 </li>
                 <li>
-                    <span class="menu__box--item" id="proyects-btn">Proyects</span>
+                    <a  href="#proyects" class="menu__box--item">Proyects</a>
                 </li>
             </ul>
             <div class="menu-btn" id="menu-btn">
@@ -80,13 +80,16 @@
             </div>
 
         </section>
+
         <div class="scrolldown" style="--color: skyblue">
             <div class="chevrons">
                 <div class="chevrondown"></div>
                 <div class="chevrondown"></div>
             </div>
         </div>
-        <h2 class="about__title"><i class="fa-solid fa-user-tie"></i>About me</h2>
+
+        <h2 class="about__title" id="about"><i class="fa-solid fa-user-tie"></i>About me</h2>
+
         <section class="about__box">
             <div class="about__text">
                 <p>I consider myself a very curious person and a good learner. I am always investigating about new technologies, tools and ways to do things better. I am good at working in a team environment, always exchaning ideas about how to approach problems and solve them efficiently.</p>
@@ -129,7 +132,8 @@
                 </div>
             </div>
         </section>
-        <section class="skills__box">
+
+        <section class="skills__box" id="skills">
             <h2><i class="fa-solid fa-code"></i>Skills</h2>
             <div class="cards__container">
                 <div class="skills__card">
@@ -150,7 +154,9 @@
                 </div>
             </div>
         </section>
-        <h2 class="education__title"><i class="fa-solid fa-user-graduate"></i> Education</h2>
+
+        <h2 class="education__title" id="education"><i class="fa-solid fa-user-graduate"></i> Education</h2>
+
         <section class="education__box">
             <div class="education-card">
                 <div class="education__card--icons">
@@ -184,7 +190,9 @@
                     <p>This years I took a course about Web Development, specialized in Frontend. I acquired a great fundamental knowledge about Javascript in the web, HTML, CSS and how to use GIT/GITHUB for teamwork. I learned different subjects such as User experience, BEM work methodology, OOP with javascript, DOM manipulation, among others.</p>
                 </div>
         </section>
-        <h2 class="education__title"><i class="fa-solid fa-briefcase"></i> Proyects</h2>
+
+        <h2 class="education__title" id="proyects"><i class="fa-solid fa-briefcase"></i> Proyects</h2>
+
         <section class="proyects__box">
                 <div class="proyect__card">
                     <img src="./assets/images/ahorcado.png" alt="proyecto-1">
@@ -221,8 +229,9 @@
                 </div>
         </section>
     </main>
-    <footer>
+    <footer id="contact">
         <h2>Have an idea?<br>Let's make it real ;)</h2>
+        <h2>Contact me in:</h2>
         <ul>
             <a href="https://www.linkedin.com/in/dagarciadev/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/Ripdiegozz" target="_blank"><i class="fa-brands fa-square-github"></i></a>

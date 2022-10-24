@@ -1,6 +1,6 @@
 @media screen and (min-width: 600px) and (max-width: 768px){
     nav{
-        height: 9vh;
+        height: 8vh;
     }
 
     .switch__box{
@@ -62,7 +62,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
     nav{
-        height: 9vh;
+        height: 7vh;
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -247,11 +247,12 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1200px){
     nav{
-        height: 8vh;
+        height: 7vh;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         column-gap: 40px;
+        position: static;
     }
 
     .header__logo a{
@@ -462,11 +463,12 @@
 
 @media screen and (min-width: 1200px){
     nav{
-        height: 8vh;
+        height: 7vh;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         column-gap: 40px;
+        position: static;
     }
 
     .header__logo a{
