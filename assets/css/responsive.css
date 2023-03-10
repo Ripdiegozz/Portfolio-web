@@ -618,10 +618,6 @@
         padding-bottom: 4em;
     }
 
-    .cards__container{
-        justify-content: space-evenly;
-    }
-
     .education__box{
         width: 100%;
         flex-direction: row;

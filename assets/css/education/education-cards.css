@@ -1,7 +1,7 @@
 .education-card{
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 3rem;
     margin: 0 auto 1em auto;
     border: 1px solid #E2E8F0;
     border-radius: 7px;

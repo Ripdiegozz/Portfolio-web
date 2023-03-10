@@ -93,7 +93,7 @@
         <section class="about__box">
             <div class="about__text">
                 <p>I consider myself a very curious person and a good learner. I am always investigating about new technologies, tools and ways to do things better. I am good at working in a team environment, always exchaning ideas about how to approach problems and solve them efficiently.</p>
-                <a href="./assets/files/Curriculum.pdf" target="_blank" class="resume__button">Resume<i class="fa-solid fa-up-right-from-square"></i></a>
+                <a href="./assets/files/Diego-Garcia-CV.pdf" target="_blank" class="resume__button">Resume<i class="fa-solid fa-up-right-from-square"></i></a>
             </div>
             <div class="languages">
                 <h2><i class="fa-solid fa-language"></i> Languages</h2>
@@ -152,6 +152,18 @@
                     <img src="./assets/images/git.png" alt="logo-git">
                     <p>GIT</p>
                 </div>
+                <div class="skills__card">
+                    <img src="./assets/images/tailwindcss.png" alt="logo-tailwind">
+                    <p>Tailwindcss</p>
+                </div>
+                <div class="skills__card">
+                    <img src="./assets/images/reactjs.png" alt="logo-react">
+                    <p>React.js</p>
+                </div>
+                <div class="skills__card">
+                    <img src="./assets/images/nextjs.png" alt="logo-nextjs">
+                    <p>Next.js</p>
+                </div>
             </div>
         </section>
 
@@ -195,6 +207,18 @@
 
         <section class="proyects__box">
                 <div class="proyect__card">
+                    <img src="./assets/images/ecommerce.jpg" alt="proyecto-1">
+                    <div class="proyect__card--text">
+                        <h2>Bluebyte ecommerce</h2>
+                        <p>Ecommerce made using React.js and implemented stateful components
+                            through React.js hooks.</p>
+                        <div class="proyect__buttons">
+                            <a href="https://bluebyte-ecommerce.vercel.app/" target="_blank" class="proyect__buttons--button">Demo</a>
+                            <a href="https://github.com/Ripdiegozz/bluebyte-ecommerce" target="_blank" class="proyect__buttons--button">Repository</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyect__card">
                     <img src="./assets/images/ahorcado.png" alt="proyecto-1">
                     <div class="proyect__card--text">
                         <h2>Hanged-man game</h2>
@@ -216,17 +240,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="proyect__card">
-                    <img src="./assets/images/Portfolio.png" alt="proyecto-1">
-                    <div class="proyect__card--text">
-                        <h2>Portfolio</h2>
-                        <p>Resume in a website about my developer profile.</p>
-                        <div class="proyect__buttons">
-                            <a href="https://dagadev.vercel.app" target="_blank" class="proyect__buttons--button">Demo</a>
-                            <a href="https://github.com/Ripdiegozz/Portfolio-web" target="_blank" class="proyect__buttons--button">Repository</a>
-                        </div>
-                    </div>
-                </div>
         </section>
     </main>
     <footer id="contact">
@@ -241,5 +254,11 @@
     </footer>
     <button id="scrollTop"><a><img src="./assets/images/chevron-upwards-arrow.png" alt="arrow"></a></button>
     <script src="./assets/js/menu.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.skills__box');
+        ScrollReveal().reveal('.education__box');
+        ScrollReveal().reveal('.proyects__box');
+    </script>
 </body> 
 </html>
