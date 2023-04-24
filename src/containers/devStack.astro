@@ -1,0 +1,58 @@
+---
+import GitLogo from '../assets/images/old-needs-organization/git.webp'
+import CssLogo from '../assets/images/old-needs-organization/css-3.webp'
+import HtmlLogo from '../assets/images/old-needs-organization/html-5.webp'
+import JsLogo from '../assets/images/old-needs-organization/js.webp'
+import TailwindLogo from '../assets/images/old-needs-organization/tailwindcss.webp'
+import ReactLogo from '../assets/images/old-needs-organization/reactjs.webp'
+import NextLogo from '../assets/images/old-needs-organization/nextjs.webp'
+
+const techStackImages = [
+    {
+      img: GitLogo,
+      name: 'Git'
+    }, 
+    {
+      img: CssLogo,
+      name: 'CSS'
+    }, 
+    {
+      img: HtmlLogo,
+      name: 'HTML'
+    }, 
+    {
+      img: JsLogo,
+      name: 'JavaScript'
+    }, 
+    {  
+      img:TailwindLogo,
+      name: 'Tailwindcss'
+    }, 
+    { 
+      img: ReactLogo,
+      name: 'React.js'
+    }, 
+    {
+      img: NextLogo,
+      name: 'Next.js'
+    }
+    ]
+---
+
+<section class="bg-[--eva-color] text-[#4831d4] w-full mt-16 px-4 py-12" id="stack">
+    <div class="container mx-auto">
+
+        <h2 class="text-center text-4xl font-bold pb-5">
+            Development Stack
+        </h2>
+
+        <ul class="py-6 flex flex-wrap justify-center items-center gap-6">
+            {techStackImages.map((tech) => (
+                <li class="flex flex-col items-center justify-center p-6 rounded-full hover:translate-y-[-0.25rem] transition-transform">
+                    <img src={tech.img} alt="Tech Stack" class="w-[50px] h-[50px} md:w-[75px] md:h-[75px] object-contain" />
+                    <h2 class="font-bold text-lg">{tech.name}</h2>
+                </li>
+            ))}
+        </ul>
+    </div>
+</section>

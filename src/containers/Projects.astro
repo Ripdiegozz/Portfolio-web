@@ -1,0 +1,68 @@
+---
+
+import filmPassport from '../assets/images/film-passport/1.webp'
+import bluebyteShop from '../assets/images/bluebyte-shop/1.webp'
+import todoApp from '../assets/images/old-needs-organization/todoApp.webp'
+import adviceApp from '../assets/images/advice-generator-app/min-logo.png'
+
+const projects = [
+	{
+		img: filmPassport,
+	 name: 'Film Passport',
+	 description: 'The Film Page is a web application that allows users to browse popular movies, search for movies, and add movies to their favorites list. Each movie has its own dedicated page with a description, trailer, and recommended similar movies.',
+	 repository: 'https://github.com/Ripdiegozz/FilmPassport',
+	 live: 'https://film-passport.vercel.app/'
+	},
+	{
+	 img: bluebyteShop,
+	 name: 'Bluebyte Shop',
+	 description: 'This project is an e-commerce website. It uses HTML, CSS, TailwindCSS, JavaScript, React.js, React Hooks, Next.js, Sanity and Stripe. The project has a functional shopping cart, a product quantity selector and payments made through Stripe.',
+	 repository: 'https://github.com/Ripdiegozz/BluebyteStore',
+	 live: 'https://bluebyte-store.vercel.app/'
+	},
+	{
+	 img: todoApp,
+	 name: 'Todo App',
+	 description: 'A to-do list app built with HTML, CSS, and JavaScript using the LocalStorage API, which allows adding a deadline for each task and grouping them by date, is an ideal tool for those who need to have a more detailed control of their pending tasks.',
+	 repository: 'https://github.com/Ripdiegozz/TODO-app',
+	 live: 'https://tabriss-app.vercel.app/'
+	},
+	{
+	 img: adviceApp,
+	 name: 'Advice generator app',
+	 description: 'This project is a simple advice generator app built with HTML, CSS, and JavaScript. It uses the Advice Slip JSON API to fetch random advice and display it on the page.',
+	 repository: 'https://github.com/Ripdiegozz/advice-generator-app',
+	 live: 'https://advice-generator-app-nine-orpin.vercel.app/'
+	}]
+
+---
+
+<section class="px-4 mt-16 bg-[#ccf381] py-10" id="projects ">
+    <div class="container mx-auto">
+
+		<h2 class="text-center text-4xl font-bold pb-5 text-[#4831d4]">
+			Featured Projects
+		</h2>
+
+		<div class="text-[#4831d4]">
+			{projects.map((project) => (
+				<div class="flex flex-col items-center gap-6 mb-10 md:flex-row">
+					<img src={project.img} alt="Featured Projects" class="w-full border-2 border-[#4831d4] border-r-4 border-b-4 rounded-xl md:w-[650px]" />
+					<div class="flex flex-col items-center">
+						<h3 class="text-2xl font-bold mb-4">{project.name}</h3>
+						<p class="text-lg">{project.description}</p>
+						<div class="flex items-center gap-8 justify-center mt-6">
+							<a href={project.repository} target="_blank" class="hover:translate-y-[-0.25rem] hover:text-black transition-all">
+								<i class="fa-brands fa-github text-5xl"></i>
+							</a>
+							<a class="border-[#4831d4] flex items-center gap-4 border-2 border-b-4 border-r-4 py-4 px-10 rounded-xl active:border-b-2 active:border-r-2 font-bold transition-colors" href={project.live} target="_blank">
+								Demo
+								<i class="fa-solid fa-up-right-from-square"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			))}
+		</div>
+	</div>
+</section>

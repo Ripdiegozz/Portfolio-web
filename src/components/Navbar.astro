@@ -1,0 +1,98 @@
+---
+import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp'
+---
+
+<header class='w-full h-20 flex items-center justify-center gap-36 bg-[#4831d4]'>
+    <nav class='h-20 flex items-center justify-around w-[70%] md:w-full md:justify-around'>
+        <a href="/">
+            <img src={logo} alt='dagadev-logo' class='h-16 w-16 hover:translate-y-[-2px] transition-transform'>
+        </a>
+
+        <ul class='absolute transtition-all translate-x-96 hidden md:flex md:flex-row md:justify-center md:items-center md:relative md:translate-x-0 md:gap-10 md:h-auto' id='nav-list'>
+            <li>
+                <button id="nav-btn">
+                    <a href="#" class='text-xl transition-all hover:text-red-200'>Home</a>
+                </button>
+            </li>
+            <li>
+                <button id="nav-btn">
+                    <a href="#stack" class='text-xl transition-all hover:text-red-200'>Tech Stack</a>
+                </button>
+            </li>
+            <li>
+                <button id="nav-btn">
+                    <a href="#about" class='text-xl transition-all hover:text-red-200'>About</a>
+                </button>
+            </li>
+            <li>
+                <button id="nav-btn">
+                    <a href="#projects" class='text-xl transition-all hover:text-red-200'>Projects</a>
+                </button>
+            </li>
+            <li>
+                <button id="nav-btn">
+                    <a href="#contact" class='text-xl transition-all hover:text-red-200'>Contact</a>
+                </button>
+            </li>
+        </ul>
+
+        <label class="btn btn-circle swap swap-rotate bg-inherit border-0 hover:bg-inherit hover:border-0 md:hidden">
+        
+            <!-- this hidden checkbox controls the state -->
+            <input type="checkbox" id="burger-menu" class="bg-inherit border-0 hover:bg-inherit hover:border-0"/>
+            
+            <!-- hamburger icon -->
+            <svg class="fill-current bg-inherit border-0 hover:bg-inherit hover:border-0" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+                <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/>
+            </svg>
+            
+        </label>
+    </nav>
+    
+</header>
+
+<script>
+    const menu = document.querySelector('#burger-menu');
+    const nav = document.querySelector('#nav-list');
+    const navBtn = document.querySelectorAll('#nav-btn');    
+
+    menu.addEventListener('change', () => {
+        nav.classList.toggle('active');
+    })
+
+    navBtn.forEach(btn => {
+        btn.addEventListener('click', () => {
+            nav.classList.remove('active')
+
+        })
+    })
+
+    let mdResolution = window.matchMedia("(min-width: 768px)")
+    
+    function mediaQueries (resolution) {
+        if (resolution.matches) { // If media query matches
+           nav.classList.remove('active');
+        }
+    }
+
+    mediaQueries(mdResolution) // Call listener function at run time
+    mdResolution.addEventListener('change', mediaQueries) // Attach listener function on state changes
+
+</script>
+
+<style>
+    #nav-list.active {
+        background: #4831d4;
+        transform: translateX(-20%);
+        gap: 5rem;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        transition: 1s all ease-in-out;
+    }
+</style>
