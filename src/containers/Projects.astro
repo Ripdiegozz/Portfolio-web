@@ -40,19 +40,19 @@ const projects = [
 <section class="px-4 mt-16 bg-[#ccf381] py-10" id="projects">
     <div class="container mx-auto">
 
-		<h2 class="text-center text-4xl font-bold pb-10 text-[#4831d4]">
+		<h2 class="text-center text-4xl font-bold pb-10 text-[#4831d4] reveal">
 			Featured Projects
 		</h2>
 
 		<div class="text-[#4831d4]">
 			{projects.map((project) => (
-				<div class="flex flex-col items-center gap-6 mb-10 md:flex-row">
+				<div class="flex flex-col items-center gap-6 mb-10 md:flex-row reveal">
 					<img src={project.img} alt="Featured Projects" class="w-full border-2 border-[#4831d4] border-r-4 border-b-4 rounded-xl md:w-[650px]" />
 					<div class="flex flex-col items-center">
 						<h3 class="text-2xl font-bold mb-4">{project.name}</h3>
 						<p class="text-lg">{project.description}</p>
 						<div class="flex items-center gap-8 justify-center mt-6">
-							<a href={project.repository} target="_blank" class="hover:translate-y-[-0.25rem] hover:text-black transition-all">
+							<a href={project.repository} target="_blank" class="hover:translate-y-[-0.25rem] hover:text-red-500 transition-all">
 								<i class="fa-brands fa-github text-5xl"></i>
 							</a>
 							<a class="border-[#4831d4] flex items-center gap-4 border-2 border-b-4 border-r-4 py-4 px-10 rounded-xl active:border-b-2 active:border-r-2 font-bold transition-colors hover:bg-red-500" href={project.live} target="_blank">
@@ -66,3 +66,15 @@ const projects = [
 		</div>
 	</div>
 </section>
+
+<script>
+    import scrollreveal from 'scrollreveal';
+
+    scrollreveal().reveal(".reveal", {
+        delay: 150,
+        duration: 1000,
+        distance: '50px',
+        origin: 'right',
+        interval: 100
+    })
+</script>

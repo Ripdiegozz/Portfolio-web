@@ -6,28 +6,28 @@
 
     <div class="container mx-auto">
 
-        <h2 class="text-4xl font-bold text-center">
+        <h2 class="text-4xl font-bold text-center reveal">
             Have an idea?<br>
             <span class="text-[--eva-color]">Let's get in touch!</span>
         </h2>
 
         <ul class="flex flex-wrap w-full justify-around items-center pt-8 md:justify-center md:gap-12">
-            <li class="hover:translate-y-[-0.25rem] transition-transform">
+            <li class="hover:translate-y-[-0.25rem] transition-transform reveal hover:text-[--eva-color]">
                 <a href="https://github.com/Ripdiegozz" target="_blank" class="text-6xl">
                     <i class="fa-brands fa-github"></i>
                 </a>
             </li>
-            <li class="hover:translate-y-[-0.25rem] transition-transform">
+            <li class="hover:translate-y-[-0.25rem] transition-transform reveal hover:text-[--eva-color]">
                 <a href="https://www.linkedin.com/in/dagadev/" target="_blank" class="text-6xl">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
             </li>
-            <li class="hover:translate-y-[-0.25rem] transition-transform">
+            <li class="hover:translate-y-[-0.25rem] transition-transform reveal hover:text-[--eva-color]">
                 <a href="mailto:dagadev@proton.me" target="_blank" class="text-6xl">
                     <i class="fa-solid fa-square-envelope"></i>
                 </a>
             </li>
-            <li class="hover:translate-y-[-0.25rem] transition-transform">
+            <li class="hover:translate-y-[-0.25rem] transition-transform reveal hover:text-[--eva-color]">
                 <a href="https://twitter.com/rip_diegozz" target="_blank" class="text-6xl">
                     <i class="fa-brands fa-twitter"></i>
                 </a>
@@ -35,3 +35,15 @@
         </ul>
     </div>
 </section>
+
+<script>
+        import scrollreveal from 'scrollreveal';
+
+        scrollreveal().reveal(".reveal", {
+            delay: 150,
+            duration: 1000,
+            distance: '100px',
+            origin: 'right',
+            interval: 100
+        })
+</script>

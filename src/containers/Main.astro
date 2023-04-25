@@ -5,30 +5,30 @@ import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp';
 <section class="bg-[#4831d4]">
     <div class="container mx-auto">
         <div class="flex flex-col md:flex-row md:items-center">
-            <img src={logo} alt="A photo of Diego Garcia" class='w-[350px] mx-auto md:w-[600px]'>
-            <article class="px-4 md:w-[50%]">
+            <img src={logo} alt="A photo of Diego Garcia" class='w-[350px] mx-auto md:w-[600px] reveal' id="my-photo">
+            <article class="px-4 md:w-[50%] reveal">
                 <h1 class='text-6xl m-0 font-bold text-center text-gradient md:text-6xl'>
                     Front-End Developer
                 </h1>
                 <p class="text-2xl mt-6 text-center">
                     Hi, I'm Diego Garcia. A <span class="text-[--eva-color] hover:text-red-400 transition-colors">passionate Front-End Developer</span> based in Colombia. 📍
                 </p>
-                <div class="px-4">
+                <div class="px-4 reveal">
                     <h2 class="pt-8 text-4xl text-center font-bold">
                         Find me on
                     </h2>
-                    <ul class="flex w-full justify-around items-center pt-4 md:justify-center md:gap-10">
-                        <li class="hover:translate-y-[-0.25rem] transition-transform">
+                    <ul class="flex w-full justify-around items-center pt-4 md:justify-center md:gap-10 reveal">
+                        <li class="hover:translate-y-[-0.25rem] transition-transform hover:text-[--eva-color]">
                             <a href="https://github.com/Ripdiegozz" target="_blank" class="text-6xl">
                                 <i class="fa-brands fa-github"></i>
                             </a>
                         </li>
-                        <li class="hover:translate-y-[-0.25rem] transition-transform">
+                        <li class="hover:translate-y-[-0.25rem] transition-transform hover:text-[--eva-color]">
                             <a href="https://www.linkedin.com/in/dagadev/" target="_blank" class="text-6xl">
                                 <i class="fa-brands fa-linkedin"></i>
                             </a>
                         </li>
-                        <li class="hover:translate-y-[-0.25rem] transition-transform">
+                        <li class="hover:translate-y-[-0.25rem] transition-transform hover:text-[--eva-color]">
                             <a href="mailto:dagadev@proton.me" target="_blank" class="text-6xl">
                                 <i class="fa-solid fa-square-envelope"></i>
                             </a>
@@ -39,3 +39,19 @@ import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp';
         </div>
     </div>
 </section>
+
+<style>
+
+</style>
+
+<script>
+    import scrollreveal from 'scrollreveal';
+
+    scrollreveal().reveal(".reveal", {
+        delay: 150,
+        duration: 1000,
+        distance: '50px',
+        origin: 'right',
+        interval: 100
+    })
+</script>

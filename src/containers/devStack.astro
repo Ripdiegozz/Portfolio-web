@@ -42,19 +42,31 @@ const techStackImages = [
 <section class="bg-[--eva-color] text-[#4831d4] w-full mt-16 px-4 py-12" id="stack">
     <div class="container mx-auto">
 
-        <h2 class="text-center text-4xl font-bold pb-5">
+        <h2 class="text-center text-4xl font-bold pb-5 reveal">
             Development Stack
         </h2>
 
         <ul class="py-6 flex flex-wrap justify-center items-center gap-6">
             {techStackImages.map((tech) => (
-                <li class="flex flex-col items-center justify-center hover:translate-y-[-0.25rem] transition-transform">
-                    <div class="bg-[#4831d4] p-6 rounded-full">
+                <li class="flex flex-col items-center justify-center reveal">
+                    <div class="bg-[#4831d4] p-6 rounded-full hover:translate-y-[-0.25rem] transition-transform">
                       <img src={tech.img} alt="Tech Stack" class="w-[50px] h-[50px} md:w-[65px] md:h-[65px] object-contain" />
                     </div>
-                    <h2 class="font-bold text-lg">{tech.name}</h2>
+                    <h2 class="font-bold text-lg pt-1">{tech.name}</h2>
                 </li>
             ))}
         </ul>
     </div>
 </section>
+
+<script>
+  import scrollreveal from 'scrollreveal';
+
+  scrollreveal().reveal(".reveal", {
+        delay: 150,
+        duration: 1000,
+        distance: '50px',
+        origin: 'left',
+        interval: 100
+    })
+</script>
