@@ -48,8 +48,10 @@ const techStackImages = [
 
         <ul class="py-6 flex flex-wrap justify-center items-center gap-6">
             {techStackImages.map((tech) => (
-                <li class="flex flex-col items-center justify-center p-6 rounded-full hover:translate-y-[-0.25rem] transition-transform">
-                    <img src={tech.img} alt="Tech Stack" class="w-[50px] h-[50px} md:w-[75px] md:h-[75px] object-contain" />
+                <li class="flex flex-col items-center justify-center hover:translate-y-[-0.25rem] transition-transform">
+                    <div class="bg-[#4831d4] p-6 rounded-full">
+                      <img src={tech.img} alt="Tech Stack" class="w-[50px] h-[50px} md:w-[65px] md:h-[65px] object-contain" />
+                    </div>
                     <h2 class="font-bold text-lg">{tech.name}</h2>
                 </li>
             ))}
