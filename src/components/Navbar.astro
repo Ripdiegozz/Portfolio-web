@@ -2,13 +2,13 @@
 import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp'
 ---
 
-<header class='w-full h-20 flex items-center justify-center gap-36 bg-[#4831d4]'>
+<header class='z-50 w-full h-20 flex items-center justify-center gap-36 bg-[#4831d4]'>
     <nav class='h-20 flex items-center justify-around w-[70%] md:w-full md:justify-around'>
         <a href="/">
             <img src={logo} alt='dagadev-logo' class='h-16 w-16 hover:translate-y-[-2px] transition-transform'>
         </a>
 
-        <ul class='absolute transtition-all translate-x-96 hidden md:flex md:flex-row md:justify-center md:items-center md:relative md:translate-x-0 md:gap-10 md:h-auto' id='nav-list'>
+        <ul class='absolute transtition-all translate-x-96 hidden md:flex md:flex-row md:justify-center md:items-center md:relative md:translate-x-0 md:gap-10 md:h-auto z-50' id='nav-list'>
             <li>
                 <button id="nav-btn">
                     <a href="#" class='text-xl transition-all hover:text-[--eva-color]'>Home</a>
@@ -36,7 +36,7 @@ import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp'
             </li>
         </ul>
 
-        <label class="btn btn-circle swap swap-rotate bg-inherit border-0 hover:bg-inherit hover:border-0 md:hidden">
+        <label class="btn btn-circle swap swap-rotate bg-inherit border-0 hover:bg-inherit hover:border-0 md:hidden z-50">
         
             <!-- this hidden checkbox controls the state -->
             <input type="checkbox" id="burger-menu" class="bg-inherit border-0 hover:bg-inherit hover:border-0"/>
