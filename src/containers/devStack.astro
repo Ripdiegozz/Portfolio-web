@@ -1,4 +1,6 @@
 ---
+import {t} from 'i18next';
+
 import GitLogo from '../assets/images/old-needs-organization/git.webp'
 import CssLogo from '../assets/images/old-needs-organization/css-3.webp'
 import HtmlLogo from '../assets/images/old-needs-organization/html-5.webp'
@@ -43,7 +45,7 @@ const techStackImages = [
     <div class="container mx-auto">
 
         <h2 class="text-center text-4xl font-bold pb-5 reveal">
-            Development Stack
+          {t('devStack.title')}
         </h2>
 
         <ul class="py-6 flex flex-wrap justify-center items-center gap-6">
@@ -63,10 +65,10 @@ const techStackImages = [
   import scrollreveal from 'scrollreveal';
 
   scrollreveal().reveal(".reveal", {
-        delay: 150,
-        duration: 1000,
+        delay: 50,
+        duration: 600,
         distance: '50px',
         origin: 'bottom',
-        interval: 100
+        interval: 70
     })
 </script>

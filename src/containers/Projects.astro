@@ -1,4 +1,5 @@
 ---
+import {t} from 'i18next';
 
 import filmPassport from '../assets/images/film-passport/1.webp'
 import bluebyteShop from '../assets/images/bluebyte-shop/1.webp'
@@ -8,31 +9,31 @@ import adviceApp from '../assets/images/advice-generator-app/min-logo.png'
 const projects = [
 	{
 		img: filmPassport,
-	 name: 'Film Passport',
-	 description: 'Film Passport is a web application that allows users to browse popular movies, search for movies, and add movies to their favorites list. Each movie has its own dedicated page with a description, trailer, and recommended similar movies.',
-	 repository: 'https://github.com/Ripdiegozz/FilmPassport',
-	 live: 'https://film-passport.vercel.app/'
+		name: t("projects.data.filmpassport.title"),
+		description: t("projects.data.filmpassport.description"),
+		repository: t("projects.data.filmpassport.repository"),
+		live: t("projects.data.filmpassport.live")
 	},
 	{
-	 img: bluebyteShop,
-	 name: 'Bluebyte Shop',
-	 description: 'This project is an e-commerce website. It uses HTML, CSS, TailwindCSS, JavaScript, React.js, React Hooks, Next.js, Sanity and Stripe. The project has a functional shopping cart, a product quantity selector and payments made through Stripe.',
-	 repository: 'https://github.com/Ripdiegozz/BluebyteStore',
-	 live: 'https://bluebyte-store.vercel.app/'
+		img: bluebyteShop,
+		name: t("projects.data.bluebyte.title"),
+		description: t("projects.data.bluebyte.description"),
+		repository: t("projects.data.bluebyte.repository"),
+		live: t("projects.data.bluebyte.live")
 	},
 	{
-	 img: todoApp,
-	 name: 'Todo App',
-	 description: 'A to-do list app built with HTML, CSS, and JavaScript using the LocalStorage API, which allows adding a deadline for each task and grouping them by date, is an ideal tool for those who need to have a more detailed control of their pending tasks.',
-	 repository: 'https://github.com/Ripdiegozz/TODO-app',
-	 live: 'https://tabriss-app.vercel.app/'
+		img: todoApp,
+		name: t("projects.data.todoapp.title"),
+		description: t("projects.data.todoapp.description"),
+		repository: t("projects.data.todoapp.repository"),
+		live: t("projects.data.todoapp.live")
 	},
 	{
-	 img: adviceApp,
-	 name: 'Advice generator app',
-	 description: 'This project is a simple advice generator app built with HTML, CSS, and JavaScript. It uses the Advice Slip JSON API to fetch random advice and display it on the page.',
-	 repository: 'https://github.com/Ripdiegozz/advice-generator-app',
-	 live: 'https://advice-generator-app-nine-orpin.vercel.app/'
+		img: adviceApp,
+		name: t("projects.data.adviceMentor.title"),
+		description: t("projects.data.adviceMentor.description"),
+		repository: t("projects.data.adviceMentor.repository"),
+		live: t("projects.data.adviceMentor.live")
 	}]
 
 ---
@@ -41,7 +42,7 @@ const projects = [
     <div class="container mx-auto">
 
 		<h2 class="text-center text-4xl font-bold pb-10 text-[#4831d4] reveal">
-			Featured Projects
+			{t("projects.title")}
 		</h2>
 
 		<div class="text-[#4831d4]">
@@ -71,10 +72,10 @@ const projects = [
     import scrollreveal from 'scrollreveal';
 
     scrollreveal().reveal(".reveal", {
-        delay: 150,
-        duration: 1000,
+        delay: 50,
+        duration: 600,
         distance: '50px',
         origin: 'bottom',
-        interval: 100
+        interval: 70
     })
 </script>

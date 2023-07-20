@@ -1,0 +1,62 @@
+{   "navbar": {
+        "home": "Home",
+        "stack": "Dev Stack",
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "main": {
+        "title": "Dearrollador Front-End",
+        "subtitle": "Hi, I am Diego. A ",
+        "subtitle_2": "based in Colombia. 📍",
+        "subtitle_highlighted": "passionate developer",
+        "contact": "Find me in:"
+    },
+    "devStack": {
+        "title": "Development Stack"
+    },
+    "about": {
+        "title": "About me",
+        "description": "Hello! My name is Diego Garcia and I enjoy creating things that live on the internet. My interest in web development started back in 2020 when I decided to try creating my own websites about things, I like such as videogames or artists — that taught me a lot about HTML & CSS!",
+        "description_2": "Fast-forward to today, my main focus these days is building accessible, inclusive products and digital experiences for a variety of clients.",
+        "subtitle": "Education",
+        "education": {
+            "title": "Software Analysis and Development",
+            "description": "Servicion Nacional de Aprendizaje (SENA)",
+            "date": "2022 - 2024"
+        }
+    },
+    "projects": {
+        "title": "Featured Projects",
+        "data": {
+            "filmpassport": {
+                "title": "Film Passport",
+                "description": "Film Passport is a web application that allows users to browse popular movies, search for movies, and add movies to their favorites list. Each movie has its own dedicated page with a description, trailer, and recommended similar movies.",
+                "live": "https://film-passport.vercel.app/",
+                "repository": "https://github.com/Ripdiegozz/FilmPassport"
+            },
+            "bluebyte": {
+                "title": "Bluebyte Shop",
+                "description": "This project is an e-commerce website. It uses HTML, CSS, TailwindCSS, JavaScript, React.js, React Hooks, Next.js, Sanity and Stripe. The project has a functional shopping cart, a product quantity selector and payments made through Stripe.",
+                "repository": "https://github.com/Ripdiegozz/BluebyteStore",
+                "live": "https://bluebyte-store.vercel.app/"
+            },
+            "todoapp": {
+                "title": "Todo App",
+                "description": "A to-do list app built with HTML, CSS, and JavaScript using the LocalStorage API, which allows adding a deadline for each task and grouping them by date, is an ideal tool for those who need to have a more detailed control of their pending tasks.",
+                "repository": "https://github.com/Ripdiegozz/TODO-app",
+	            "live": "https://tabriss-app.vercel.app/"
+            },
+            "adviceMentor": {
+                "title": "Advice Generator App",
+                "description": "This project is a simple advice generator app built with HTML, CSS, and JavaScript. It uses the Advice Slip JSON API to fetch random advice and display it on the page.",
+                "repository": "https://github.com/Ripdiegozz/advice-generator-app",
+	            "live": "https://advice-generator-app-nine-orpin.vercel.app/"
+            }
+        }
+    },
+    "contact": {
+        "title": "Have an idea?",
+        "subtitle": "Let's get in touch!"
+    }
+}
