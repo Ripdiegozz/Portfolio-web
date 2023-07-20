@@ -27,16 +27,15 @@ import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp'
             <li>
                 <a href="#contact" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold ml-5' id="nav-btn">{t('navbar.contact')}</a>
             </li>
-            <li class="flex items-center ml-5 md:justify-end md:pl-16">
-                <div class="dropdown">
-                    <label tabindex="0" class="btn m-1 bg-[#ccf381] text-gray-800 hover:bg-[#ccf381] hover:border-2 border-none border-[#bg-[#4831d4 ]">Language</label>
-                    <ul tabindex="0" class="dropdown-content flex flex-col items-center justify-center z-[1] menu p-2 shadow rounded-box w-22 bg-[#ccf381] text-white">
-                        <li><a href="/en"><img src="/united-states.png" alt="usa-flag" class="w-10"></a></li>
-                        <li><a href="/es"><img src="/spain.png" alt="spain-flag" class="w-10"></li>
-                    </ul>
-                </div>
-            </li>
         </ul>
+
+        <div class="dropdown">
+            <label tabindex="0" class="btn bg-[#ccf381] text-gray-800 hover:bg-[#ccf381]"><img src="/language.png" alt="lang-flag" class="w-9"></label>
+            <ul tabindex="0" class="dropdown-content flex flex-col items-center justify-center z-[1] menu p-2 shadow rounded-box w-22 bg-[#ccf381] text-white">
+                <li><a href="/en"><img src="/united-states.png" alt="usa-flag"></a></li>
+                <li><a href="/es"><img src="/spain.png" alt="spain-flag"></li>
+            </ul>
+        </div>
 
         <label class="btn btn-circle swap swap-rotate bg-inherit border-0 hover:bg-inherit hover:border-0 md:hidden z-50">
         
