@@ -3,7 +3,8 @@
         "stack": "Dev Stack",
         "about": "About",
         "projects": "Projects",
-        "contact": "Contact"
+        "contact": "Contact",
+        "language": "Language"
     },
     "main": {
         "title": "Dearrollador Front-End",

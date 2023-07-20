@@ -2,39 +2,39 @@
 import {t} from 'i18next';
 
 import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp'
+
 ---
 
-<header class='z-50 w-full h-20 flex items-center justify-center gap-36 bg-[#4831d4]'>
-    <nav class='h-20 flex items-center justify-around w-[70%] md:w-full md:justify-around'>
+<header class='z-50 w-full h-20 flex items-center justify-center bg-[#4831d4]'>
+    <nav class='h-20 flex items-center justify-around gap-10 w-[80%] md:w-[80%] md:justify-center'>
         <a href="/">
-            <img src={logo} alt='dagadev-logo' class='h-16 w-16 hover:translate-y-[-2px] transition-transform'>
+            <img src={logo} alt='dagadev-logo' class='w-[75px] hover:translate-y-[-2px] transition-transform'>
         </a>
 
-        <ul class='absolute transtition-all translate-x-96 hidden md:flex md:flex-row md:justify-center md:items-center md:relative md:translate-x-0 md:gap-10 md:h-auto z-50' id='nav-list'>
+        <ul class='absolute transtition-all translate-x-96 hidden md:flex md:flex-row md:justify-center md:items-center md:relative md:translate-x-0 md:gap-0 md:h-auto z-50' id='nav-list'>
             <li>
-                <button id="nav-btn">
-                    <a href="#" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold'>{t('navbar.home')}</a>
-                </button>
+                <a href="#" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold ml-5' id="nav-btn">{t('navbar.home')}</a>
             </li>
             <li>
-                <button id="nav-btn">
-                    <a href="#stack" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold'>{t('navbar.stack')}</a>
-                </button>
+                <a href="#stack" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold ml-5' id="nav-btn">{t('navbar.stack')}</a>
             </li>
             <li>
-                <button id="nav-btn">
-                    <a href="#about" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold'>{t('navbar.about')}</a>
-                </button>
+                <a href="#about" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold ml-5' id="nav-btn">{t('navbar.about')}</a>
             </li>
             <li>
-                <button id="nav-btn">
-                    <a href="#projects" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold'>{t('navbar.projects')}</a>
-                </button>
+                <a href="#projects" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold ml-5' id="nav-btn">{t('navbar.projects')}</a>
             </li>
             <li>
-                <button id="nav-btn">
-                    <a href="#contact" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold'>{t('navbar.contact')}</a>
-                </button>
+                <a href="#contact" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold ml-5' id="nav-btn">{t('navbar.contact')}</a>
+            </li>
+            <li class="flex items-center ml-5 md:justify-end md:pl-16">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn m-1 bg-[#ccf381] text-gray-800 hover:bg-[#ccf381] hover:border-2 border-none border-[#bg-[#4831d4 ]">Language</label>
+                    <ul tabindex="0" class="dropdown-content flex flex-col items-center justify-center z-[1] menu p-2 shadow rounded-box w-22 bg-[#ccf381] text-white">
+                        <li><a href="/en"><img src="/public/united-states.png" alt="usa-flag" class="w-10"></a></li>
+                        <li><a href="/es"><img src="/public/spain.png" alt="spain-flag" class="w-10"></li>
+                    </ul>
+                </div>
             </li>
         </ul>
 
@@ -49,8 +49,7 @@ import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp'
             </svg>
             
         </label>
-    </nav>
-    
+    </nav>  
 </header>
 
 <script>
@@ -86,7 +85,7 @@ import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp'
     #nav-list.active {
         background: #4831d4;
         transform: translateX(-20%);
-        gap: 5rem;
+        gap: 2rem;
         bottom: 0;
         right: 0;
         top: 0;
