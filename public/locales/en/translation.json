@@ -33,7 +33,7 @@
             "filmpassport": {
                 "title": "Film Passport",
                 "description": "Film Passport is a web application that allows users to browse popular movies, search for movies, and add movies to their favorites list. Each movie has its own dedicated page with a description, trailer, and recommended similar movies.",
-                "live": "https://film-passport.vercel.app/",
+                "live": "https://film-passport.netlify.app/",
                 "repository": "https://github.com/Ripdiegozz/FilmPassport"
             },
             "bluebyte": {
@@ -46,13 +46,13 @@
                 "title": "Todo App",
                 "description": "A to-do list app built with HTML, CSS, and JavaScript using the LocalStorage API, which allows adding a deadline for each task and grouping them by date, is an ideal tool for those who need to have a more detailed control of their pending tasks.",
                 "repository": "https://github.com/Ripdiegozz/TODO-app",
-	            "live": "https://tabriss-app.vercel.app/"
+	            "live": "https://todo-app-mu-pink.vercel.app/"
             },
             "adviceMentor": {
                 "title": "Advice Generator App",
                 "description": "This project is a simple advice generator app built with HTML, CSS, and JavaScript. It uses the Advice Slip JSON API to fetch random advice and display it on the page.",
                 "repository": "https://github.com/Ripdiegozz/advice-generator-app",
-	            "live": "https://advice-generator-app-nine-orpin.vercel.app/"
+	            "live": "https://advice-generator-app-ashen.vercel.app/"
             }
         }
     },
