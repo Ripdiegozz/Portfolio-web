@@ -1,8 +1,7 @@
 ---
 import {t} from 'i18next';
-import CV from '../assets/misc/Diego-Garcia-CV.pdf';
-
 ---
+
 
 <article class="flex flex-col items-center mt-16 px-4 bg-[#4831d4]" id="about">
     <div class="container mx-auto">
@@ -17,10 +16,13 @@ import CV from '../assets/misc/Diego-Garcia-CV.pdf';
             {t('about.description_2')}
         </p>
 
-        <a class="mt-6 mb-10 static flex items-center gap-4 border-2 border-b-4 border-r-4 py-4 px-10 rounded-xl hover:bg-red-500 active:border-b-2 active:border-r-2 transition-colors w-[190px] mx-auto reveal" href={CV} download="Diego-Garcia-CV">
+        <button 
+        class="mt-6 mb-10 static flex items-center gap-4 border-2 border-b-4 border-r-4 py-4 px-10 rounded-xl hover:bg-red-500 active:border-b-2 active:border-r-2 transition-colors w-[190px] mx-auto reveal"
+        id="cvButton"
+        >
             Curriculum
             <i class="fa-solid fa-file-arrow-down"></i>
-        </a>
+        </button>
 
         <h2 class="text-center text-4xl font-bold text-[--eva-color] reveal">{t('about.subtitle')}</h2>
 
@@ -42,6 +44,8 @@ import CV from '../assets/misc/Diego-Garcia-CV.pdf';
 
 <script>
     import scrollreveal from 'scrollreveal';
+    import cv from '../assets/misc/CV.pdf';
+    import cvLight from '../assets/misc/CV-Light.pdf';
 
     scrollreveal().reveal(".reveal", {
         delay: 50,
@@ -49,5 +53,17 @@ import CV from '../assets/misc/Diego-Garcia-CV.pdf';
         distance: '50px',
         origin: 'bottom',
         interval: 70
-    })
+    });
+
+    // Detect dark mode in the browser
+    const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    const cvButton = document.getElementById('cvButton');
+
+    const cvArray = [cv, cvLight];
+    
+    cvButton.addEventListener('click', () => {
+        const cvIndex = isDarkMode ? 0 : 1;
+        window.open(cvArray[cvIndex], '_blank');
+    });
 </script>

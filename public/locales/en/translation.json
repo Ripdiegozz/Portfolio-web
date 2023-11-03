@@ -42,6 +42,12 @@
                 "repository": "https://github.com/Ripdiegozz/BluebyteStore",
                 "live": "https://bluebyte-store.vercel.app/"
             },
+            "notewave": {
+                "title": "Notewave",
+                "description": "Notewave is your personal digital universe for capturing inspiration and ideas. It's a space where you can effortlessly craft notes, documents, and lists, and then, with a few clicks, share your creations with the world. Whether you're a creative thinker, a meticulous planner, or something in between, Notewave adapts to your unique style. It's a symphony of organization and creativity, designed to empower your thoughts and simplify your digital life. With Notewave, your ideas take center stage, and the world is your audience.",
+                "repository": "https://github.com/Ripdiegozz/Notewave",
+                "live": "https://notewave-lake.vercel.app/"
+            },
             "todoapp": {
                 "title": "Todo App",
                 "description": "A to-do list app built with HTML, CSS, and JavaScript using the LocalStorage API, which allows adding a deadline for each task and grouping them by date, is an ideal tool for those who need to have a more detailed control of their pending tasks.",

@@ -43,6 +43,12 @@
                 "repository": "https://github.com/Ripdiegozz/BluebyteStore",
                 "live": "https://bluebyte-store.vercel.app/"
             },
+            "notewave": {
+                "title": "Notewave",
+                "description": "Notewave es tu universo digital personal para capturar inspiración e ideas. Es un espacio en el que puedes crear notas, documentos y listas con facilidad, y luego, con unos pocos clics, compartir tus creaciones con el mundo. Ya seas un pensador creativo, un planificador meticuloso o algo intermedio, Notewave se adapta a tu estilo único. Es una sinfonía de organización y creatividad, diseñada para potenciar tus pensamientos y simplificar tu vida digital. Con Notewave, tus ideas toman el centro del escenario, y el mundo es tu audiencia.",
+                "repository": "https://github.com/Ripdiegozz/Notewave",
+                "live": "https://notewave-lake.vercel.app/"
+            },
             "todoapp": {
                 "title": "Todo App",
                 "description": "Una app de listas de tareas pendientes construida con HTML, CSS y JavaScript utilizando la API LocalStorage, que permite añadir una fecha límite para cada tarea y agruparlas por fechas, es una herramienta ideal para quienes necesitan tener un control más detallado de sus tareas pendientes.",
