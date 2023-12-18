@@ -65,5 +65,8 @@
     "contact": {
         "title": "Have an idea?",
         "subtitle": "Let's get in touch!"
+    },
+    "cv": {
+        "url": "/CV.pdf"
     }
 }

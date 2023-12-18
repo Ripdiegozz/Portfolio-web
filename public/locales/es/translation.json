@@ -66,5 +66,8 @@
     "contact": {
         "title": "¿Tienes una idea?",
         "subtitle": "¡Hablemos!"
+    },
+    "cv": {
+        "url": "/CV_(ESP).pdf"
     }
 }

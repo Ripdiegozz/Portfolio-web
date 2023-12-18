@@ -9,13 +9,6 @@ import notewave from '../assets/images/notewave/1.png'
 
 const projects = [
 	{
-		img: filmPassport,
-		name: t("projects.data.filmpassport.title"),
-		description: t("projects.data.filmpassport.description"),
-		repository: t("projects.data.filmpassport.repository"),
-		live: t("projects.data.filmpassport.live")
-	},
-	{
 		img: bluebyteShop,
 		name: t("projects.data.bluebyte.title"),
 		description: t("projects.data.bluebyte.description"),
@@ -28,6 +21,13 @@ const projects = [
 		description: t("projects.data.notewave.description"),
 		repository: t("projects.data.notewave.repository"),
 		live: t("projects.data.notewave.live")
+	},
+	{
+		img: filmPassport,
+		name: t("projects.data.filmpassport.title"),
+		description: t("projects.data.filmpassport.description"),
+		repository: t("projects.data.filmpassport.repository"),
+		live: t("projects.data.filmpassport.live")
 	},
 	{
 		img: todoApp,
@@ -61,11 +61,11 @@ const projects = [
 						<h3 class="text-2xl font-bold mb-4">{project.name}</h3>
 						<p class="text-lg">{project.description}</p>
 						<div class="flex items-center gap-8 justify-center mt-6">
-							<a href={project.repository} target="_blank" class="hover:translate-y-[-0.25rem] hover:text-red-500 transition-all">
+							<a href={project.repository} target="_blank" class="hover:translate-y-[-0.25rem] hover:text-rose-400 transition-all">
 								<i class="fa-brands fa-github text-5xl"></i>
 							</a>
-							<a class="border-[#4831d4] flex items-center gap-4 border-2 border-b-4 border-r-4 py-4 px-10 rounded-xl active:border-b-2 active:border-r-2 font-bold transition-colors hover:bg-red-500" href={project.live} target="_blank">
-								Demo
+							<a class="border-[#4831d4] flex items-center gap-4 border-2 border-b-4 border-r-4 py-4 px-10 rounded-xl active:border-b-2 active:border-r-2 font-bold transition-colors hover:bg-rose-400" href={project.live} target="_blank">
+								Live
 								<i class="fa-solid fa-up-right-from-square"></i>
 							</a>
 						</div>

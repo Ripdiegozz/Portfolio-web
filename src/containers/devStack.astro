@@ -2,12 +2,18 @@
 import {t} from 'i18next';
 
 import GitLogo from '../assets/images/old-needs-organization/git.webp'
-import CssLogo from '../assets/images/old-needs-organization/css-3.webp'
-import HtmlLogo from '../assets/images/old-needs-organization/html-5.webp'
+import HTMLandCSS from '../assets/images/newDevStack/html-css.webp'
 import JsLogo from '../assets/images/old-needs-organization/js.webp'
 import TailwindLogo from '../assets/images/old-needs-organization/tailwindcss.webp'
 import ReactLogo from '../assets/images/old-needs-organization/reactjs.webp'
 import NextLogo from '../assets/images/old-needs-organization/nextjs.webp'
+import JavaLogo from '../assets/images/newDevStack/java.png'
+import PythonLogo from '../assets/images/newDevStack/Python-logo-notext.svg.png'
+import mySqlLogo from '../assets/images/newDevStack/mySql.png'
+import TypesScriptLogo from '../assets/images/newDevStack/ts.png'
+import PrismaLogo from '../assets/images/newDevStack/prisma-3.svg'
+import TanstackQueryLogo from '../assets/images/newDevStack/tsquery.png'
+import DjangoLogo from '../assets/images/newDevStack/django.png'
 
 const techStackImages = [
     {
@@ -15,12 +21,8 @@ const techStackImages = [
       name: 'Git'
     }, 
     {
-      img: CssLogo,
-      name: 'CSS'
-    }, 
-    {
-      img: HtmlLogo,
-      name: 'HTML'
+      img: HTMLandCSS,
+      name: 'HTML & CSS'
     }, 
     {
       img: JsLogo,
@@ -28,7 +30,7 @@ const techStackImages = [
     }, 
     {  
       img:TailwindLogo,
-      name: 'Tailwindcss'
+      name: 'TailwindCSS'
     }, 
     { 
       img: ReactLogo,
@@ -37,8 +39,36 @@ const techStackImages = [
     {
       img: NextLogo,
       name: 'Next.js'
+    },
+    {
+      img: TypesScriptLogo,
+      name: 'TypeScript'
+    },
+    {
+      img: TanstackQueryLogo,
+      name: 'Tanstack Query'
+    },
+    {
+      img: JavaLogo,
+      name: 'Java'
+    },
+    {
+      img: PythonLogo,
+      name: 'Python'
+    },
+    {
+      img: DjangoLogo,
+      name: 'Django'
+    },
+    {
+      img: mySqlLogo,
+      name: 'MySQL'
+    },
+    {
+      img: PrismaLogo,
+      name: 'Prisma ORM'
     }
-    ]
+]
 ---
 
 <section class="bg-[--eva-color] text-[#4831d4] w-full mt-16 px-4 py-12" id="stack">
@@ -48,7 +78,7 @@ const techStackImages = [
           {t('devStack.title')}
         </h2>
 
-        <ul class="py-6 flex flex-wrap justify-center items-center gap-6">
+        <ul class="py-6 flex flex-wrap justify-center items-center gap-6 w-[80%] mx-auto">
             {techStackImages.map((tech) => (
                 <li class="flex flex-col items-center justify-center reveal">
                     <div class="bg-[#4831d4] p-6 rounded-full hover:translate-y-[-0.25rem] transition-transform">

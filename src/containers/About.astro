@@ -16,13 +16,13 @@ import {t} from 'i18next';
             {t('about.description_2')}
         </p>
 
-        <button 
-        class="mt-6 mb-10 static flex items-center gap-4 border-2 border-b-4 border-r-4 py-4 px-10 rounded-xl hover:bg-red-500 active:border-b-2 active:border-r-2 transition-colors w-[190px] mx-auto reveal"
-        id="cvButton"
+        <a
+        class="mt-6 mb-10 static flex items-center gap-4 border-2 border-b-4 border-r-4 py-4 px-10 rounded-xl hover:bg-rose-400 active:border-b-2 active:border-r-2 transition-colors w-[190px] mx-auto reveal"
+        href={t('cv.url')}
         >
             Curriculum
             <i class="fa-solid fa-file-arrow-down"></i>
-        </button>
+        </a>
 
         <h2 class="text-center text-4xl font-bold text-[--eva-color] reveal">{t('about.subtitle')}</h2>
 
@@ -44,8 +44,6 @@ import {t} from 'i18next';
 
 <script>
     import scrollreveal from 'scrollreveal';
-    import cv from '../assets/misc/CV.pdf';
-    import cvLight from '../assets/misc/CV-Light.pdf';
 
     scrollreveal().reveal(".reveal", {
         delay: 50,
@@ -53,17 +51,5 @@ import {t} from 'i18next';
         distance: '50px',
         origin: 'bottom',
         interval: 70
-    });
-
-    // Detect dark mode in the browser
-    const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    const cvButton = document.getElementById('cvButton');
-
-    const cvArray = [cv, cvLight];
-    
-    cvButton.addEventListener('click', () => {
-        const cvIndex = isDarkMode ? 0 : 1;
-        window.open(cvArray[cvIndex], '_blank');
     });
 </script>
