@@ -24,19 +24,37 @@ import {t} from 'i18next';
             <i class="fa-solid fa-file-arrow-down"></i>
         </a>
 
-        <h2 class="text-center text-4xl font-bold text-[--eva-color] reveal">{t('about.subtitle')}</h2>
+        <h2 class="text-center text-4xl font-bold text-[--eva-color] reveal">{t('about.jobs.title')}</h2>
 
-        <div class="flex flex-col items-center reveal">
-            <div class="p-4 border-2 mt-4 mb-4 rounded-lg w-full h-40 flex flex-col justify-center transition-transform md:w-[50%] hover:text-[--eva-color] reveal">
-                <h3 class="text-2xl font-bold">{t('about.education.title')}</h3>
-                <p class="text-lg">{t('about.education.description')}</p>
-                <p class="text-lg">{t('about.education.date')}</p>
+        <div class="flex mx-auto mt-4 md:space-between flex-col md:flex-row md:gap-8 items-center reveal">
+            <div class="p-4 border-2 mt-4 mb-4 rounded-lg w-full h-60 flex flex-col justify-center transition md:w-[50%] hover:text-[--eva-color] reveal">
+                <h3 class="text-2xl font-bold">{t('about.jobs.1.company')}</h3>
+                <p class="text-lg font-semibold badge bg-[--eva-color] text-[#4831d4] rounded-md py-2.5">{t('about.jobs.1.title')}</p>
+                <p class="text-lg">{t('about.jobs.1.date')}</p>
+                <p class="text-lg mt-2 pb-2">{t('about.jobs.1.description')}</p>
             </div>
 
-            <div class="p-4 border-2 mt-4 mb-4 rounded-lg w-full h-40 flex flex-col justify-center transition-transform md:w-[50%] hover:text-[--eva-color] reveal">
-                <h3 class="text-2xl font-bold">Front-End Developer</h3>
-                <p class="text-lg">Oracle Next Eduaction</p>
-                <p class="text-lg">2022 - 2023</p>
+            <div class="p-4 border-2 mt-4 mb-4 rounded-lg w-full h-60 flex flex-col justify-center transition md:w-[50%] hover:text-[--eva-color] reveal">
+                <h3 class="text-2xl font-bold">{t('about.jobs.2.company')}</h3>
+                <p class="text-lg font-semibold badge bg-[--eva-color] text-[#4831d4] rounded-md py-2.5">{t('about.jobs.2.title')}</p>
+                <p class="text-lg">{t('about.jobs.2.date')}</p>
+                <p class="text-lg py-2">{t('about.jobs.2.description')}</p>
+            </div>
+        </div>
+
+        <h2 class="text-center text-4xl mt-4 font-bold text-[--eva-color] reveal">{t('about.subtitle')}</h2>
+
+        <div class="flex mx-auto mt-4 md:space-between flex-col md:flex-row md:gap-8 items-center reveal">
+            <div class="p-4 border-2 mt-4 mb-4 rounded-lg w-full h-40 flex flex-col justify-center transition md:w-[50%] hover:text-[--eva-color] reveal">
+                <h3 class="text-2xl font-bold">{t('about.education.title')}</h3>
+                <p class="text-lg font-semibold">{t('about.education.description')}</p>
+                <p class="text-lg pt-2">{t('about.education.date')}</p>
+            </div>
+
+            <div class="p-4 border-2 mt-4 mb-4 rounded-lg w-full h-40 flex flex-col justify-center transition md:w-[50%] hover:text-[--eva-color] reveal">
+                <h3 class="text-2xl font-bold">Front-End Development</h3>
+                <p class="text-lg font-semibold">Oracle Next Eduaction</p>
+                <p class="text-lg pt-2">2022 - 2023</p>
             </div>
         </div>
     </div>

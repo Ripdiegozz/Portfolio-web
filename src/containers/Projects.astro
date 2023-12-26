@@ -3,11 +3,19 @@ import {t} from 'i18next';
 
 import filmPassport from '../assets/images/film-passport/1.webp'
 import bluebyteShop from '../assets/images/bluebyte-shop/1.webp'
-import todoApp from '../assets/images/old-needs-organization/todoApp.webp'
+import todoApp from '../assets/images/old-needs-organization/1.png'
 import adviceApp from '../assets/images/advice-generator-app/min-logo.png'
 import notewave from '../assets/images/notewave/1.png'
+import eden from '../assets/images/eden/1.png'
 
 const projects = [
+	{
+		img: eden,
+		name: t("projects.data.eden.title"),
+		description: t("projects.data.eden.description"),
+		repository: t("projects.data.eden.repository"),
+		live: t("projects.data.eden.live")
+	},
 	{
 		img: bluebyteShop,
 		name: t("projects.data.bluebyte.title"),

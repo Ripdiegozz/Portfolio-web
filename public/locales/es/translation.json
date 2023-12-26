@@ -15,7 +15,8 @@
         "contact": "Encuéntrame en:"
     },
     "devStack": {
-        "title": "Stack de Desarrollo"
+        "title": "Stack de Desarrollo",
+        "subtitle": "Aquí hay algunas de algunas de las tecnologías que he utilizado recientemente:"
     },
     "about": {
         "title": "Sobre mi",
@@ -26,6 +27,21 @@
             "title": "Análisis y Desarrollo de Software",
             "description": "Servicion Nacional de Aprendizaje (SENA)",
             "date": "2022 - 2024"
+        },
+        "jobs": {
+            "title": "Experiencia Laboral",
+            "1": {
+                "company": "SuperGiros",
+                "title": "Desarrollador de Software",
+                "date": "Ago 2023 - Presente",
+                "description": "Actualmente trabajo como Desarrollador de Software en SuperGiros, una empresa de servicios financieros. Mi trabajo consiste en crear y mantener aplicaciones web para uso interno y externo, así como también crear y mantener sitios web para la empresa."
+            },
+            "2": {
+                "company": "Freelance",
+                "title": "Desarrollador Front-End",
+                "date": "Jul 2022 - Presente",
+                "description": "He trabajado como desarrolador freelance por más de un año, principalmente para pequeñas empresas y organizaciones. He trabajado en una amplia gama de proyectos para clientes de todo el mundo."
+            }
         }
     },
     "projects": {
@@ -60,6 +76,12 @@
                 "description": "Este proyecto es una sencilla aplicación generadora de consejos construida con HTML, CSS y JavaScript. Utiliza la API Advice Slip JSON para obtener consejos aleatorios y mostrarlos en la página.",
                 "repository": "https://github.com/Ripdiegozz/advice-generator-app",
 	            "live": "https://advice-generator-app-ashen.vercel.app/"
+            },
+            "eden": {
+                "title": "Eden",
+                "description": "EDEN: una aplicación de chat orientada a la comunidad creada para dar vida a las conversaciones en un vibrante espacio virtual. Conéctese con amigos, comparta ideas y explore un nuevo ámbito de comunicación en línea. Únete hoy mismo a la experiencia EDEN.",
+                "repository": "https://github.com/Ripdiegozz/Eden",
+	            "live": "https://eden-production.up.railway.app/"
             }
         }
     },

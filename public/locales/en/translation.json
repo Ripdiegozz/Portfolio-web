@@ -1,4 +1,6 @@
-{   "navbar": {
+{   
+    
+    "navbar": {
         "home": "Home",
         "stack": "Dev Stack",
         "about": "About",
@@ -14,7 +16,8 @@
         "contact": "Find me in:"
     },
     "devStack": {
-        "title": "Development Stack"
+        "title": "Development Stack",
+        "subtitle": "There are some of the technologies I use for my projects."
     },
     "about": {
         "title": "About me",
@@ -25,6 +28,21 @@
             "title": "Software Analysis and Development",
             "description": "Servicion Nacional de Aprendizaje (SENA)",
             "date": "2022 - 2024"
+        },
+        "jobs": {
+            "title": "Work Experience",
+            "1": {
+                "company": "SuperGiros",
+                "title": "Software Developer",
+                "date": "Aug 2023 - Present",
+                "description": "I'm currently working as a Software Developer at SuperGiros, a company that provides financial services to the Colombian population. I'm in charge of developing and maintaining the company's website, as well as developing new features for the company's internal applications."
+            },
+            "2": {
+                "company": "Freelance",
+                "title": "Front-End Developer",
+                "date": "Aug 2021- Present",
+                "description": "I've been working as a freelance developer for over a year now, mostly for small businesses and organizations. I've worked on a wide range of projects for clients all over the world."
+            }
         }
     },
     "projects": {
@@ -59,6 +77,12 @@
                 "description": "This project is a simple advice generator app built with HTML, CSS, and JavaScript. It uses the Advice Slip JSON API to fetch random advice and display it on the page.",
                 "repository": "https://github.com/Ripdiegozz/advice-generator-app",
 	            "live": "https://advice-generator-app-ashen.vercel.app/"
+            },
+            "eden": {
+                "title": "Eden",
+                "description": "EDEN: A community-driven chat application built to bring conversations to life in a vibrant virtual space. Connect with friends, share ideas, and explore a new realm of online communication. Join the EDEN experience today!",
+                "repository": "https://github.com/Ripdiegozz/Eden",
+	            "live": "https://eden-production.up.railway.app/"
             }
         }
     },
