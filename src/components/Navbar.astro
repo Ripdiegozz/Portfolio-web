@@ -7,9 +7,7 @@ import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp'
 
 <header class='z-50 w-full h-20 flex items-center justify-center bg-[#4831d4]'>
     <nav class='h-20 flex items-center justify-around gap-10 w-[80%] md:w-[80%] md:justify-center'>
-        <a href="/">
-            <img src={logo} alt='dagadev-logo' class='w-[75px] hover:translate-y-[-2px] transition-transform'>
-        </a>
+        <img src={logo} alt='dagadev-logo' class='w-[75px] hover:translate-y-[-2px] transition-transform'>
 
         <ul class='absolute transtition-all translate-x-96 hidden md:flex md:flex-row md:justify-center md:items-center md:relative md:translate-x-0 md:gap-0 md:h-auto z-50' id='nav-list'>
             <li>
@@ -30,10 +28,18 @@ import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp'
         </ul>
 
         <div class="dropdown">
-            <label tabindex="0" class="btn bg-[#ccf381] text-gray-800 hover:bg-[#ccf381]"><img src="/language.png" alt="lang-flag" class="w-9"></label>
+            <label tabindex="0" class="btn bg-[#ccf381] text-gray-800 hover:bg-[#ccf381] w-16"><img src="/language.png" alt="lang-flag" class="w-9"></label>
             <ul tabindex="0" class="dropdown-content flex flex-col items-center justify-center z-[1] menu p-2 shadow rounded-box w-22 bg-[#ccf381] text-white">
-                <li><a href="/en"><img src="/united-states.png" alt="usa-flag"></a></li>
-                <li><a href="/es"><img src="/spain.png" alt="spain-flag"></li>
+                <li>
+                    <a href="/en">
+                        <img src="/united-states.png" alt="usa-flag">
+                    </a>
+                </li>
+                <li>
+                    <a href="/es">
+                        <img src="/spain.png" alt="spain-flag">
+                    </a>
+                </li>
             </ul>
         </div>
 

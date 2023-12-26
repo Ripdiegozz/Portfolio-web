@@ -4,33 +4,31 @@ import {t} from 'i18next';
 ---
 
 <section class="bg-[#4831d4]">
-    <div class="container mx-auto my-12">
-        <div class="flex flex-col md:flex-row md:items-center">
-            <img src={logo} alt="A photo of mine" class='w-[250px] outline-[#ccf381] outline-5 outline outline-offset-4 rounded-xl mx-auto md:w-[350px] reveal' id="my-photo">
-            <article class="px-4 mt-10 md:w-[50%] reveal">
-                <h1 class='text-5xl m-0 font-bold text-center text-gradient md:text-5xl'>
-                    {t('main.title')}
-                </h1>
-                <p class="text-2xl mt-6 text-center">
-                    {t('main.subtitle')}<span class="text-[--eva-color] hover:text-red-400 transition-colors">{t('main.subtitle_highlighted')}</span> {t('main.subtitle_2')}
+    <div class="container mx-auto my-10 text-center">
+        <div class="flex flex-col md:grid md:grid-cols-2 md:flex-none md:items-center justify-center gap-0 md:gap-14 mx-auto max-w-5xl">
+            <img src={logo} alt="A photo of mine" class='w-[250px] outline-[#ccf381] outline-5 outline rounded-full reveal px-4 mx-auto md:mx-auto' id="my-photo" />
+            <article class="p-4 reveal flex flex-col items-center justify-center" id="texto-animado">
+                <h1 class='text-3xl mb-1 font-bold text-center text-gradient md:text-5xl aparecer min-h-[3rem]' id="rolTexto"></h1>
+                <p class="text-xl mt-4 md:max-w-md text-center">
+                    {t('main.subtitle')}<span class="text-[--eva-color] hover:text-rose-400 transition">{t('main.subtitle_highlighted')}</span> {t('main.subtitle_2')}
                 </p>
                 <footer class="px-4 reveal">
-                    <h2 class="pt-8 text-2xl text-center font-bold">
+                    <h2 class="pt-4 text-xl text-center font-semibold">
                         {t('main.contact')}
                     </h2>
-                    <ul class="flex w-full justify-around items-center pt-4 md:justify-center md:gap-10 reveal">
-                        <li class="hover:translate-y-[-0.25rem] transition-transform hover:text-[--eva-color]">
-                            <a href="https://github.com/Ripdiegozz" target="_blank" class="text-6xl">
+                    <ul class="flex w-full justify-around items-center md:justify-center gap-4 md:gap-10 reveal">
+                        <li class="hover:scale-110 transition-transform hover:text-[--eva-color]">
+                            <a href="https://github.com/Ripdiegozz" target="_blank" class="text-5xl">
                                 <i class="fa-brands fa-github"></i>
                             </a>
                         </li>
-                        <li class="hover:translate-y-[-0.25rem] transition-transform hover:text-[--eva-color]">
-                            <a href="https://www.linkedin.com/in/dagadev/" target="_blank" class="text-6xl">
+                        <li class="hover:scale-110 transition-transform hover:text-[--eva-color]">
+                            <a href="https://www.linkedin.com/in/dagadev/" target="_blank" class="text-5xl">
                                 <i class="fa-brands fa-linkedin"></i>
                             </a>
                         </li>
-                        <li class="hover:translate-y-[-0.25rem] transition-transform hover:text-[--eva-color]">
-                            <a href="mailto:dagadev@proton.me" target="_blank" class="text-6xl">
+                        <li class="hover:scale-110 transition-transform hover:text-[--eva-color]">
+                            <a href="mailto:dagadev@proton.me" target="_blank" class="text-5xl">
                                 <i class="fa-solid fa-square-envelope"></i>
                             </a>
                         </li>
@@ -42,11 +40,52 @@ import {t} from 'i18next';
 </section>
 
 <style>
+    .aparecer {
+        animation: aparecer is forwards;
+        transform: translateY(20px);
+    }
 
+    @keyframes aparecer {
+        to { 
+            opacity: 0;
+            transform: translateY(0);
+        }
+    }
 </style>
 
 <script>
     import scrollreveal from 'scrollreveal';
+    import Typed from 'typed.js';
+
+    const url = new URL(window.location.href); // .../es || .../en
+    let roles = [];
+    // Check Language
+    if (
+        url.pathname === '/es' ||
+        url.pathname === '/es/'
+    ) {
+        roles = [
+            "Desarrollador Front-End",
+            "Desarrollador Full-Stack",
+            "Desarrollador de Software",
+            "Analista de Software"
+        ]
+    } else {
+        roles = [
+            "Front-End Developer",
+            "Full-Stack Developer",
+            "Software Developer",
+            "Software Analyst"
+        ]
+    }
+
+    new Typed('#rolTexto', {
+        strings: roles,
+        typeSpeed: 85,
+        cursorChar: '',
+        backSpeed: 50,
+        loop: true,
+    });
 
     scrollreveal().reveal(".reveal", {
         delay: 50,

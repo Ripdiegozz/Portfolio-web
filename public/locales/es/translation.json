@@ -91,5 +91,14 @@
     },
     "cv": {
         "url": "/CV_(ESP).pdf"
+    },
+    "meta":{
+        "title": "Diego Garcia - Desarrollador de Software",
+        "description": "Como Desarrollador y Analista de Software versátil, aporto una combinación única de competencia técnica e información analítica a los proyectos digitales. Especializado en la creación de interfaces de usuario intuitivas y visualmente atractivas, me dedico a ofrecer experiencias de usuario perfectas. Con un ojo atento a los detalles, analizo los requisitos del software, diseño soluciones eficientes e implemento un código robusto. Explore mi portafolio para presenciar la intersección de la creatividad y la funcionalidad, que muestra mi compromiso con la construcción de aplicaciones web innovadoras y centradas en el usuario.",
+        "keywords": "Front-End Developer, Software Analyst, Web Developer, Web Designer, HTML, CSS, JavaScript, React, Next.js, TailwindCSS, Sanity, Stripe, Git, GitHub, Vercel, Freelance, Colombia, Node.js, Express.js",
+        "author": "Diego Garcia",
+        "url": "https://dagadev.vercel.app/",
+        "image": "/images/og-image.png",
+        "twitter": "@Ripdiegozz"
     }
 }
