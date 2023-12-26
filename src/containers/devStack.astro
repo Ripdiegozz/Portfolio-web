@@ -43,14 +43,6 @@ const techStackImages = [
       key: 'typescript'
     },
     {
-      name: 'Python',
-      key: 'python'
-    },
-    {
-      name: 'Django',
-      key: 'django'
-    },
-    {
       name: 'MySQL',
       key: 'mysql'
     },
@@ -83,13 +75,13 @@ const techStackImages = [
                 {t("devStack.subtitle")}
               </p>
             </div>
-            <div class="flex flex-wrap justify-center gap-6 w-[60%] mx-auto reveal">
+            <div class="flex flex-wrap justify-center gap-6 w-full md:w-[75%] mx-auto reveal">
               {
                 techStackImages.map((tech) => (
                   <div class="p-0 transition-transform hover:scale-105 tooltip" data-tip={tech.name}>
                     <p class="text-md text-center">
                       <a href="https://skillicons.dev">
-                        <img src={`https://skillicons.dev/icons?i=${tech.key}`} class="h-20 w-20"/>
+                        <img src={`https://skillicons.dev/icons?i=${tech.key}`} class="h-14 w-14 md:h-20 md:w-20"/>
                       </a>
                     </p>
                   </div>
