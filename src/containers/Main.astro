@@ -8,8 +8,10 @@ import {t} from 'i18next';
         <div class="flex flex-col md:grid md:grid-cols-2 md:flex-none md:items-center justify-center gap-0 md:gap-14 mx-auto max-w-5xl">
             <img src={logo} alt="A photo of mine" class='w-[250px] outline-[#ccf381] outline-5 outline rounded-full reveal px-4 mx-auto md:mx-auto' id="my-photo" />
             <article class="p-4 reveal flex flex-col items-center justify-center" id="texto-animado">
-                <h1 class='text-3xl mb-1 font-bold text-center text-gradient md:text-5xl aparecer min-h-[3rem]' id="rolTexto"></h1>
-                <p class="text-xl mt-4 md:max-w-md text-center">
+                <h1 
+                class='text-3xl font-bold text-center text-gradient md:text-5xl aparecer'
+                id="rolTexto"></h1>
+                <p class="text-xl mt-6 md:max-w-xl text-center">
                     {t('main.subtitle')}<span class="text-[--eva-color] hover:text-rose-400 transition">{t('main.subtitle_highlighted')}</span> {t('main.subtitle_2')}
                 </p>
                 <footer class="px-4 reveal">
@@ -65,10 +67,10 @@ import {t} from 'i18next';
         url.pathname === '/es/'
     ) {
         roles = [
-            "Desarrollador Front-End",
-            "Desarrollador Full-Stack",
-            "Desarrollador de Software",
-            "Analista de Software"
+            "Desarrollador<br>Front-End",
+            "Desarrollador<br>Full-Stack",
+            "Desarrollador de<br>Software",
+            "Analista de<br>Software"
         ]
     } else {
         roles = [
@@ -77,6 +79,14 @@ import {t} from 'i18next';
             "Software Developer",
             "Software Analyst"
         ]
+    }
+
+    const typedContainter = document.querySelector('.aparecer');
+
+    if (url.pathname === '/es' || url.pathname === '/es/') {
+        typedContainter.classList.add('min-h-[6rem]')
+    } else {
+        typedContainter.classList.add('min-h-[4rem]')
     }
 
     new Typed('#rolTexto', {
