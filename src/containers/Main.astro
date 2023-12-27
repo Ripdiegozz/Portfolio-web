@@ -6,7 +6,7 @@ import {t} from 'i18next';
 <section class="bg-[#4831d4]">
     <div class="container mx-auto mb-2 mt-0 py-10 text-center">
         <div class="flex flex-col md:grid md:grid-cols-2 md:flex-none md:items-center justify-center gap-0 md:gap-14 mx-auto max-w-5xl">
-            <img src={logo} alt="A photo of mine" class='w-[275px] outline-[#ccf381] outline-5 outline rounded-full reveal px-4 mx-auto' id="my-photo" />
+            <img src={logo} alt="A photo of mine" class='w-[275px] h-[320px] outline-[#ccf381] outline-5 outline rounded-full reveal px-4 mx-auto' id="my-photo" />
             <article class="p-4 reveal flex flex-col items-center justify-center" id="texto-animado">
                 <h1 
                 class='text-4xl font-bold text-center text-gradient md:text-5xl aparecer'
@@ -86,7 +86,7 @@ import {t} from 'i18next';
     if (url.pathname === '/es' || url.pathname === '/es/') {
         typedContainter.classList.add('min-h-[6rem]')
     } else {
-        typedContainter.classList.add('min-h-[5rem]')
+        typedContainter.classList.add('min-h-[6rem]')
     }
 
     new Typed('#rolTexto', {
