@@ -12,12 +12,9 @@ import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp'
         <ul class='absolute transition-all translate-x-96 hidden lg:flex lg:flex-row lg:justify-center lg:items-center lg:relative lg:translate-x-0 lg:gap-8 lg:h-auto z-50' id='nav-list'>
             {/* X button to close menu */}
             <li class='absolute top-0 right-0 mt-5 mr-5'>
-                <label class="btn btn-circle swap swap-rotate bg-inherit border-0 hover:bg-inherit hover:border-0 lg:hidden z-50">
-                    <!-- this hidden checkbox controls the state -->
-                    <input type="checkbox" class="bg-inherit border-0 hover:bg-inherit hover:border-0" />
-                    <!-- hamburger icon -->
+                <button class="btn btn-circle swap swap-rotate bg-inherit border-0 hover:bg-inherit hover:border-0 lg:hidden z-50">
                     <i class="fa-regular fa-circle-xmark text-2xl text-primary" />
-                </label>
+                </button>
             </li>
             <li>
                 <a href="#" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold' id="nav-btn">{t('navbar.home')}</a>
@@ -54,7 +51,7 @@ import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp'
             </ul>
         </div>
 
-        <label class="btn btn-circle swap swap-rotate bg-inherit border-0 hover:bg-inherit hover:border-0 lg:hidden z-50">
+        <label class="btn btn-circle swap swap-rotate bg-inherit border-0 hover:bg-inherit hover:border-0 lg:hidden z-50" for="burger-menu">
             <!-- this hidden checkbox controls the state -->
             <input type="checkbox" id="burger-menu" name="bg-icon" class="bg-inherit border-0 hover:bg-inherit hover:border-0" />
             <!-- hamburger icon -->
