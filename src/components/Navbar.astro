@@ -7,9 +7,9 @@ import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp'
 
 <header class='z-50 w-full h-20 flex items-center justify-center bg-[#4831d4]'>
     <nav class='h-20 flex items-center justify-around gap-10 w-[80%] md:w-[100%] md:justify-around lg:justify-center'>
-        <img src={logo} alt='dagadev-logo' class='w-[75px] hover:translate-y-[-2px] transition-transform'>
+        <img src={logo} alt='dagadev-logo' class='w-[75px] h-[75px] hover:translate-y-[-2px] transition-transform'>
 
-        <ul class='absolute transition-all translate-x-96 hidden lg:flex lg:flex-row lg:justify-center lg:items-center lg:relative lg:translate-x-0 lg:gap-0 lg:h-auto z-50' id='nav-list'>
+        <ul class='absolute transition-all translate-x-96 hidden lg:flex lg:flex-row lg:justify-center lg:items-center lg:relative lg:translate-x-0 lg:gap-8 lg:h-auto z-50' id='nav-list'>
             {/* X button to close menu */}
             <li class='absolute top-0 right-0 mt-5 mr-5'>
                 <label class="btn btn-circle swap swap-rotate bg-inherit border-0 hover:bg-inherit hover:border-0 lg:hidden z-50">
@@ -20,33 +20,35 @@ import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp'
                 </label>
             </li>
             <li>
-                <a href="#" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold ml-5' id="nav-btn">{t('navbar.home')}</a>
+                <a href="#" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold' id="nav-btn">{t('navbar.home')}</a>
             </li>
             <li>
-                <a href="#stack" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold ml-5' id="nav-btn">{t('navbar.stack')}</a>
+                <a href="#stack" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold' id="nav-btn">{t('navbar.stack')}</a>
             </li>
             <li>
-                <a href="#about" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold ml-5' id="nav-btn">{t('navbar.about')}</a>
+                <a href="#about" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold' id="nav-btn">{t('navbar.about')}</a>
             </li>
             <li>
-                <a href="#projects" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold ml-5' id="nav-btn">{t('navbar.projects')}</a>
+                <a href="#projects" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold' id="nav-btn">{t('navbar.projects')}</a>
             </li>
             <li>
-                <a href="#contact" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold ml-5' id="nav-btn">{t('navbar.contact')}</a>
+                <a href="#contact" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold' id="nav-btn">{t('navbar.contact')}</a>
             </li>
         </ul>
 
         <div class="dropdown">
-            <label tabindex="0" class="btn bg-[#ccf381] text-gray-800 hover:bg-[#ccf381] w-16"><img src="/language.png" alt="lang-flag" class="w-9"></label>
+            <label tabindex="0" class="btn bg-[#ccf381] text-gray-800 hover:bg-[#ccf381] w-16">
+                <img src="/language.png" alt="lang-flag" class="w-8 h-6">
+            </label>
             <ul tabindex="0" class="dropdown-content flex flex-col items-center justify-center z-[1] menu p-2 shadow rounded-box w-22 bg-[#ccf381] text-white">
                 <li>
                     <a href="/en">
-                        <img src="/united-states.png" alt="usa-flag">
+                        <img src="/united-states.png" alt="usa-flag" class="w-4 h-4">
                     </a>
                 </li>
                 <li>
                     <a href="/es">
-                        <img src="/spain.png" alt="spain-flag">
+                        <img src="/spain.png" alt="spain-flag" class="w-4 h-4">
                     </a>
                 </li>
             </ul>
@@ -88,7 +90,11 @@ import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp'
 
     navBtn.forEach(btn => {
         btn.classList.remove('hover:text-[--eva-color]')
-        btn.classList.add('pl-8')
+        if (nav.classList.contains('active')) {
+            btn.classList.add('pl-8')
+        } else {
+            btn.classList.remove('pl-8')
+        }
         // Remove the active class when the user clicks on a nav link
         btn.addEventListener('click', () => {
             nav.classList.remove('active')
