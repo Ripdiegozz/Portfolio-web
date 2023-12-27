@@ -6,10 +6,10 @@ import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp'
 ---
 
 <header class='z-50 w-full h-20 flex items-center justify-center bg-[#4831d4]'>
-    <nav class='h-20 flex items-center justify-around gap-10 w-[80%] md:w-[80%] md:justify-center'>
+    <nav class='h-20 flex items-center justify-around gap-10 w-[80%] md:w-[100%] md:justify-around lg:justify-center'>
         <img src={logo} alt='dagadev-logo' class='w-[75px] hover:translate-y-[-2px] transition-transform'>
 
-        <ul class='absolute transtition-all translate-x-96 hidden md:flex md:flex-row md:justify-center md:items-center md:relative md:translate-x-0 md:gap-0 md:h-auto z-50' id='nav-list'>
+        <ul class='absolute transtition-all translate-x-96 hidden lg:flex lg:flex-row lg:justify-center lg:items-center lg:relative lg:translate-x-0 lg:gap-0 lg:h-auto z-50' id='nav-list'>
             <li>
                 <a href="#" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold ml-5' id="nav-btn">{t('navbar.home')}</a>
             </li>
@@ -43,16 +43,13 @@ import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp'
             </ul>
         </div>
 
-        <label class="btn btn-circle swap swap-rotate bg-inherit border-0 hover:bg-inherit hover:border-0 md:hidden z-50">
-        
+        <label class="btn btn-circle swap swap-rotate bg-inherit border-0 hover:bg-inherit hover:border-0 lg:hidden z-50">
             <!-- this hidden checkbox controls the state -->
             <input type="checkbox" id="burger-menu" class="bg-inherit border-0 hover:bg-inherit hover:border-0"/>
-            
             <!-- hamburger icon -->
             <svg class="fill-current bg-inherit border-0 hover:bg-inherit hover:border-0" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
                 <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/>
             </svg>
-            
         </label>
     </nav>  
 </header>
@@ -67,9 +64,10 @@ import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp'
     })
 
     navBtn.forEach(btn => {
+        btn.classList.remove('hover:text-[--eva-color]')
+    
         btn.addEventListener('click', () => {
             nav.classList.remove('active')
-
         })
     })
 
@@ -88,8 +86,9 @@ import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp'
 
 <style>
     #nav-list.active {
-        background: #4831d4;
-        transform: translateX(-20%);
+        background: var(--eva-color);
+        color: #4831d4;
+        transform: translateX(-25%);
         gap: 2rem;
         bottom: 0;
         right: 0;

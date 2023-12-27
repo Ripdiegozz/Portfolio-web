@@ -4,21 +4,21 @@ import {t} from 'i18next';
 ---
 
 <section class="bg-[#4831d4]">
-    <div class="container mx-auto my-10 text-center">
+    <div class="container mx-auto mb-2 mt-8 py-10 text-center">
         <div class="flex flex-col md:grid md:grid-cols-2 md:flex-none md:items-center justify-center gap-0 md:gap-14 mx-auto max-w-5xl">
-            <img src={logo} alt="A photo of mine" class='w-[250px] outline-[#ccf381] outline-5 outline rounded-full reveal px-4 mx-auto md:mx-auto' id="my-photo" />
+            <img src={logo} alt="A photo of mine" class='w-[275px] outline-[#ccf381] outline-5 outline rounded-full reveal px-4 mx-auto' id="my-photo" />
             <article class="p-4 reveal flex flex-col items-center justify-center" id="texto-animado">
                 <h1 
-                class='text-3xl font-bold text-center text-gradient md:text-5xl aparecer'
+                class='text-4xl font-bold text-center text-gradient md:text-5xl aparecer'
                 id="rolTexto"></h1>
                 <p class="text-xl mt-6 md:max-w-xl text-center">
                     {t('main.subtitle')}<span class="text-[--eva-color] hover:text-rose-400 transition">{t('main.subtitle_highlighted')}</span> {t('main.subtitle_2')}
                 </p>
-                <footer class="px-4 reveal">
+                <footer class="px-4 reveal flex-col flex gap-2">
                     <h2 class="pt-4 text-xl text-center font-semibold">
                         {t('main.contact')}
                     </h2>
-                    <ul class="flex w-full justify-around items-center md:justify-center gap-4 md:gap-10 reveal">
+                    <ul class="flex w-full justify-around items-center md:justify-center gap-6 mt-2 md:gap-10 reveal">
                         <li class="hover:scale-110 transition-transform hover:text-[--eva-color]">
                             <a href="https://github.com/Ripdiegozz" target="_blank" class="text-5xl">
                                 <i class="fa-brands fa-github"></i>
