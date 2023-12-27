@@ -13,24 +13,24 @@ import {t} from 'i18next';
         </h2>
 
         <ul class="flex flex-wrap w-full justify-around items-center pt-8 md:justify-center md:gap-12">
-            <li class="hover:translate-y-[-0.25rem] transition-transform reveal hover:text-[--eva-color]">
-                <a href="https://github.com/Ripdiegozz" target="_blank" class="text-6xl">
-                    <i class="fa-brands fa-github"></i>
+            <li class="reveal hover:text-[--eva-color]">
+                <a href="https://github.com/Ripdiegozz" target="_blank" class="text-5xl" aria-label="My Github Profile">
+                    <i class="fa-brands fa-github hover:scale-110 transition"></i>
                 </a>
             </li>
-            <li class="hover:translate-y-[-0.25rem] transition-transform reveal hover:text-[--eva-color]">
-                <a href="https://www.linkedin.com/in/dagadev/" target="_blank" class="text-6xl">
-                    <i class="fa-brands fa-linkedin"></i>
+            <li class="reveal hover:text-[--eva-color]">
+                <a href="https://www.linkedin.com/in/dagadev/" target="_blank" class="text-5xl" aria-label="My Linkedin">
+                    <i class="fa-brands fa-linkedin hover:scale-110 transition"></i>
                 </a>
             </li>
-            <li class="hover:translate-y-[-0.25rem] transition-transform reveal hover:text-[--eva-color]">
-                <a href="mailto:dagadev@proton.me" target="_blank" class="text-6xl">
-                    <i class="fa-solid fa-square-envelope"></i>
+            <li class="reveal hover:text-[--eva-color]" aria-label="Mail me :)">
+                <a href="mailto:dagadev@proton.me" target="_blank" class="text-5xl">
+                    <i class="fa-solid fa-square-envelope hover:scale-110 transition"></i>
                 </a>
             </li>
-            <li class="hover:translate-y-[-0.25rem] transition-transform reveal hover:text-[--eva-color]">
-                <a href="https://twitter.com/rip_diegozz" target="_blank" class="text-6xl">
-                    <i class="fa-brands fa-twitter"></i>
+            <li class="reveal hover:text-[--eva-color]" aria-label="Reach me out at twitter">
+                <a href="https://twitter.com/rip_diegozz" target="_blank" class="text-5xl">
+                    <i class="fa-brands fa-x-twitter hover:scale-110 transition"></i>
                 </a>
             </li>
         </ul>
@@ -42,9 +42,9 @@ import {t} from 'i18next';
 
         scrollreveal().reveal(".reveal", {
             delay: 150,
-            duration: 600,
+            duration: 450,
             distance: '50px',
             origin: 'bottom',
-            interval: 100
+            interval: 50
         })
 </script>

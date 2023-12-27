@@ -9,7 +9,16 @@ import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp'
     <nav class='h-20 flex items-center justify-around gap-10 w-[80%] md:w-[100%] md:justify-around lg:justify-center'>
         <img src={logo} alt='dagadev-logo' class='w-[75px] hover:translate-y-[-2px] transition-transform'>
 
-        <ul class='absolute transtition-all translate-x-96 hidden lg:flex lg:flex-row lg:justify-center lg:items-center lg:relative lg:translate-x-0 lg:gap-0 lg:h-auto z-50' id='nav-list'>
+        <ul class='absolute transition-all translate-x-96 hidden lg:flex lg:flex-row lg:justify-center lg:items-center lg:relative lg:translate-x-0 lg:gap-0 lg:h-auto z-50' id='nav-list'>
+            {/* X button to close menu */}
+            <li class='absolute top-0 right-0 mt-5 mr-5'>
+                <label class="btn btn-circle swap swap-rotate bg-inherit border-0 hover:bg-inherit hover:border-0 lg:hidden z-50">
+                    <!-- this hidden checkbox controls the state -->
+                    <input type="checkbox" class="bg-inherit border-0 hover:bg-inherit hover:border-0" />
+                    <!-- hamburger icon -->
+                    <i class="fa-regular fa-circle-xmark text-2xl text-primary" />
+                </label>
+            </li>
             <li>
                 <a href="#" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold ml-5' id="nav-btn">{t('navbar.home')}</a>
             </li>
@@ -45,7 +54,7 @@ import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp'
 
         <label class="btn btn-circle swap swap-rotate bg-inherit border-0 hover:bg-inherit hover:border-0 lg:hidden z-50">
             <!-- this hidden checkbox controls the state -->
-            <input type="checkbox" id="burger-menu" class="bg-inherit border-0 hover:bg-inherit hover:border-0"/>
+            <input type="checkbox" id="burger-menu" name="bg-icon" class="bg-inherit border-0 hover:bg-inherit hover:border-0" />
             <!-- hamburger icon -->
             <svg class="fill-current bg-inherit border-0 hover:bg-inherit hover:border-0" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
                 <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/>
@@ -58,14 +67,29 @@ import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp'
     const menu = document.querySelector('#burger-menu');
     const nav = document.querySelector('#nav-list');
     const navBtn = document.querySelectorAll('#nav-btn');    
+    const main = document.querySelector('main');
 
     menu.addEventListener('change', () => {
-        nav.classList.toggle('active');
+        // Add blur to the body when the nav menu is active
+
+        if (nav.classList.contains('active')) {
+            main.classList.remove('blurry')
+            
+        } else {
+            main.classList.add('blurry')
+        }
+
+        if (nav.classList.contains('active')) {
+            nav.classList.remove('active')
+        } else {
+            nav.classList.add('active')
+        }
     })
 
     navBtn.forEach(btn => {
         btn.classList.remove('hover:text-[--eva-color]')
-    
+        btn.classList.add('pl-8')
+        // Remove the active class when the user clicks on a nav link
         btn.addEventListener('click', () => {
             nav.classList.remove('active')
         })
@@ -82,13 +106,26 @@ import logo from '../assets/images/old-needs-organization/Dagadev-logo.webp'
     mediaQueries(mdResolution) // Call listener function at run time
     mdResolution.addEventListener('change', mediaQueries) // Attach listener function on state changes
 
+    // if users press outside the nav menu, it will close and remove the blur effect
+    window.addEventListener('click', (e) => {
+        if (e.target != nav && e.target != menu) {
+            nav.classList.remove('active')
+
+            if (document.body.classList.contains('blurry')) {
+                document.body.classList.remove('blurry')
+            }
+        }
+    })
+
 </script>
 
 <style>
     #nav-list.active {
         background: var(--eva-color);
         color: #4831d4;
-        transform: translateX(-25%);
+        transform: translateX(-22.50%);
+        position: fixed;
+        border-radius: 15px;
         gap: 2rem;
         bottom: 0;
         right: 0;

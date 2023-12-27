@@ -25,7 +25,7 @@
         "subtitle": "Educación",
         "education": {
             "title": "Análisis y Desarrollo de Software",
-            "description": "Servicion Nacional de Aprendizaje (SENA)",
+            "description": "Servicio Nacional de Aprendizaje (SENA)",
             "date": "2022 - 2024"
         },
         "jobs": {
@@ -49,39 +49,45 @@
         "data": {
             "filmpassport": {
                 "title": "Film Passport",
-                "description": "Film Passport es una aplicación web que permite a los usuarios navegar por películas populares, buscar películas y añadir películas a su lista de favoritos. Cada película tiene su propia página dedicada con una descripción, tráiler y películas similares recomendadas.",
+                "description": "Film Passport es una aplicación web que permite a los usuarios explorar películas populares, buscar películas y agregarlas a su lista de favoritos. Cada película tiene su propia página dedicada con una descripción, tráiler y recomendaciones de películas similares.",
                 "live": "https://film-passport.netlify.app/",
-                "repository": "https://github.com/Ripdiegozz/FilmPassport"
+                "repository": "https://github.com/Ripdiegozz/FilmPassport",
+                "tech": "react,nextjs,tailwindcss,js,css,html"
             },
             "bluebyte": {
-                "title": "Bluebyte Shop",
-                "description": "Este proyecto es un sitio web de comercio electrónico. Utiliza HTML, CSS, TailwindCSS, JavaScript, React.js, React Hooks, Next.js, Sanity y Stripe. El proyecto tiene un carrito de compras funcional, un selector de cantidad de productos y pagos realizados a través de Stripe.",
+                "title": "Bluebyte",
+                "description": "Bluebyte es un sitio web de comercio electrónico que utiliza HTML, CSS, TailwindCSS, JavaScript, React.js, React Hooks, Next.js, Sanity y Stripe. El proyecto cuenta con un carrito de compras funcional, un selector de cantidad de productos y pagos a través de Stripe.",
                 "repository": "https://github.com/Ripdiegozz/BluebyteStore",
-                "live": "https://bluebyte-store.vercel.app/"
+                "live": "https://bluebyte-store.vercel.app/",
+                "tech": "react,nextjs,tailwindcss,ts,js,css,html"
             },
             "notewave": {
                 "title": "Notewave",
-                "description": "Notewave es tu universo digital personal para capturar inspiración e ideas. Es un espacio en el que puedes crear notas, documentos y listas con facilidad, y luego, con unos pocos clics, compartir tus creaciones con el mundo. Ya seas un pensador creativo, un planificador meticuloso o algo intermedio, Notewave se adapta a tu estilo único. Es una sinfonía de organización y creatividad, diseñada para potenciar tus pensamientos y simplificar tu vida digital. Con Notewave, tus ideas toman el centro del escenario, y el mundo es tu audiencia.",
+                "description": "Notewave es tu espacio digital para la inspiración y las ideas, simplificando la creación y compartición. Adaptable a tu estilo único, fusiona organización y creatividad. Potencia tus pensamientos, simplifica tu vida digital y destaca tus ideas en un escenario global, donde el mundo es tu audiencia.",
                 "repository": "https://github.com/Ripdiegozz/Notewave",
-                "live": "https://notewave-lake.vercel.app/"
+                "live": "https://notewave-lake.vercel.app/",
+                "tech": "react,nextjs,tailwindcss,ts,js,css,html"
             },
             "todoapp": {
-                "title": "Todo App",
-                "description": "Una app de listas de tareas pendientes construida con HTML, CSS y JavaScript utilizando la API LocalStorage, que permite añadir una fecha límite para cada tarea y agruparlas por fechas, es una herramienta ideal para quienes necesitan tener un control más detallado de sus tareas pendientes.",
+                "title": "TaskQ",
+                "description": "TaskQ es una aplicación de lista de tareas construida con HTML, CSS y JavaScript utilizando la API de LocalStorage. Permite agregar una fecha límite para cada tarea y agruparlas por fecha, siendo una herramienta ideal para quienes necesitan un control más detallado de sus tareas pendientes.",
                 "repository": "https://github.com/Ripdiegozz/TODO-app",
-	            "live": "https://todo-app-mu-pink.vercel.app/"
+	            "live": "https://todo-app-mu-pink.vercel.app/",
+                "tech": "react,js,css,html"
             },
             "adviceMentor": {
-                "title": "Advice Generator App",
-                "description": "Este proyecto es una sencilla aplicación generadora de consejos construida con HTML, CSS y JavaScript. Utiliza la API Advice Slip JSON para obtener consejos aleatorios y mostrarlos en la página.",
+                "title": "Advice Mentor",
+                "description": "Advice Mentor es una sencilla aplicación generadora de consejos construida con HTML, CSS y JavaScript. Utiliza la API de Advice Slip para obtener consejos aleatorios y mostrarlos en la página.",
                 "repository": "https://github.com/Ripdiegozz/advice-generator-app",
-	            "live": "https://advice-generator-app-ashen.vercel.app/"
+	            "live": "https://advice-generator-app-ashen.vercel.app/",
+                "tech": "react,js,css,html"
             },
             "eden": {
                 "title": "Eden",
-                "description": "EDEN: una aplicación de chat orientada a la comunidad creada para dar vida a las conversaciones en un vibrante espacio virtual. Conéctese con amigos, comparta ideas y explore un nuevo ámbito de comunicación en línea. Únete hoy mismo a la experiencia EDEN.",
+                "description": "Eden es una aplicación de chat impulsada por la comunidad diseñada para dar vida a las conversaciones en un espacio virtual vibrante. Conéctate con amigos, comparte ideas y explora una nueva forma de comunicación en línea. ¡Únete a la experiencia EDEN hoy mismo!",
                 "repository": "https://github.com/Ripdiegozz/Eden",
-	            "live": "https://eden-production.up.railway.app/"
+	            "live": "https://eden-production.up.railway.app/",
+                "tech": "react,nextjs,tailwindcss,js,ts,planetscale,mysql,prisma,css,html"
             }
         }
     },

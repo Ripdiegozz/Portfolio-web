@@ -14,72 +14,126 @@ const projects = [
 		name: t("projects.data.eden.title"),
 		description: t("projects.data.eden.description"),
 		repository: t("projects.data.eden.repository"),
-		live: t("projects.data.eden.live")
+		live: t("projects.data.eden.live"),
+		tech: t("projects.data.eden.tech")
 	},
 	{
 		img: bluebyteShop,
 		name: t("projects.data.bluebyte.title"),
 		description: t("projects.data.bluebyte.description"),
 		repository: t("projects.data.bluebyte.repository"),
-		live: t("projects.data.bluebyte.live")
+		live: t("projects.data.bluebyte.live"),
+		tech: t("projects.data.bluebyte.tech")
 	},
 	{
 		img: notewave,
 		name: t("projects.data.notewave.title"),
 		description: t("projects.data.notewave.description"),
 		repository: t("projects.data.notewave.repository"),
-		live: t("projects.data.notewave.live")
+		live: t("projects.data.notewave.live"),
+		tech: t("projects.data.notewave.tech")
 	},
 	{
 		img: filmPassport,
 		name: t("projects.data.filmpassport.title"),
 		description: t("projects.data.filmpassport.description"),
 		repository: t("projects.data.filmpassport.repository"),
-		live: t("projects.data.filmpassport.live")
+		live: t("projects.data.filmpassport.live"),
+		tech: t("projects.data.filmpassport.tech")
 	},
 	{
 		img: todoApp,
 		name: t("projects.data.todoapp.title"),
 		description: t("projects.data.todoapp.description"),
 		repository: t("projects.data.todoapp.repository"),
-		live: t("projects.data.todoapp.live")
+		live: t("projects.data.todoapp.live"),
+		tech: t("projects.data.todoapp.tech")
 	},
 	{
 		img: adviceApp,
 		name: t("projects.data.adviceMentor.title"),
 		description: t("projects.data.adviceMentor.description"),
 		repository: t("projects.data.adviceMentor.repository"),
-		live: t("projects.data.adviceMentor.live")
+		live: t("projects.data.adviceMentor.live"),
+		tech: t("projects.data.adviceMentor.tech")
 	}]
-
 ---
 
-<section class="px-4 mt-16 bg-[#ccf381] py-10" id="projects">
+<section class="px-1 md:px-4 mt-16 bg-[#ccf381] py-10" id="projects">
     <div class="container mx-auto">
-
-		<h2 class="text-center text-4xl font-bold pb-10 text-[#4831d4] reveal">
+		<h2 class="text-center text-4xl font-bold py-6 text-[#4831d4] reveal">
 			{t("projects.title")}
 		</h2>
-
-		<div class="text-[#4831d4]">
-			{projects.map((project) => (
-				<div class="flex flex-col items-center gap-6 mb-10 md:flex-row reveal">
-					<img src={project.img} alt="Featured Projects" class="w-full border-2 border-[#4831d4] border-r-4 border-b-4 rounded-xl md:w-[650px]" />
-					<div class="flex flex-col items-center">
-						<h3 class="text-2xl font-bold mb-4">{project.name}</h3>
-						<p class="text-lg">{project.description}</p>
-						<div class="flex items-center gap-8 justify-center mt-6">
-							<a href={project.repository} target="_blank" class="hover:translate-y-[-0.25rem] hover:text-rose-400 transition-all">
-								<i class="fa-brands fa-github text-5xl"></i>
-							</a>
-							<a class="border-[#4831d4] flex items-center gap-4 border-2 border-b-4 border-r-4 py-4 px-10 rounded-xl active:border-b-2 active:border-r-2 font-bold transition-colors hover:bg-rose-400" href={project.live} target="_blank">
-								Live
-								<i class="fa-solid fa-up-right-from-square"></i>
-							</a>
+		<div class="flex flex-col w-full min-h-screen reveal">
+			<main
+			  class="flex min-h-[calc(100vh_-_theme(spacing.16))] flex-1 flex-col gap-4 p-0 md:gap-8 md:p-0 lg:p-10"
+			>
+			  <div
+				class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl w-full mx-auto"
+			  >
+				{
+					projects.map((project) => (
+						<div
+							class="rounded-lg border-2 border-r-4 border-b-4 border-[#4831d4] bg-card text-card-foreground shadow-sm"
+							data-v0-t="card"
+						>
+							<div class="space-y-1.5 p-6 flex flex-row items-center gap-4">
+								<div class="grid gap-1 text-primary">
+									<h3 class="text-2xl font-semibold leading-none tracking-tight pb-2">
+										{project.name}
+									</h3>
+									<p class="text-md text-muted-foreground min-h-[120px]">
+										{project.description}
+									</p>
+									<h4 class="font-semibold pt-1">The engine room of this project: </h4>
+									<div class="flex flex-wrap gap-2">
+										{
+											project.tech.split(',').map((tech) => (
+												<div
+													class="p-0 transition-transform hover:scale-105 tooltip tooltip-bottom"
+													data-tip={tech}
+												>
+													<p class="text-md text-center">
+														<a href="https://skillicons.dev" aria-label={tech}>
+															<img
+															src={`https://skillicons.dev/icons?i=${tech}`}
+															alt={tech}
+															class="h-8 w-8"
+															/>
+														</a>
+													</p>
+												</div>
+											))
+										}
+									</div>
+								</div>
+							</div>
+							<div class="p-6 pt-0 px-3 md:pt-2 grid gap-2">
+								<img
+									src={project.img}
+									alt={project.name}
+									style="aspect-ratio: 300 / 300; object-fit: cover;"
+									class="w-full h-[320px] rounded-md border-2 border-[#4831d4] border-r-4 border-b-4"
+								/>
+							</div>
+							<div class="flex items-center justify-around md:justify-start gap-4 p-6">
+								<button
+									class="border-[#4831d4] text-primary flex items-center gap-4 border-2 border-b-4 border-r-4 py-4 px-8 rounded-xl active:border-b-2 active:border-r-2 font-semibold transition-colors hover:bg-rose-400"
+								>
+									<a href={project.live} target="_blank" aria-label="Live Website">
+										Live
+									</a>
+									<i class="fa-solid fa-up-right-from-square"></i>
+								</button>
+								<a href={project.repository} target="_blank" aria-label="Github Repository">
+									<i class="fa-brands fa-github text-5xl text-primary hover:scale-110 hover:text-primary/90 transition" />
+								</a>
+							</div>
 						</div>
-					</div>
-				</div>
-			))}
+					))
+				}
+			  </div>
+			</main>
 		</div>
 	</div>
 </section>
@@ -89,9 +143,9 @@ const projects = [
 
     scrollreveal().reveal(".reveal", {
         delay: 50,
-        duration: 600,
+        duration: 450,
         distance: '50px',
         origin: 'bottom',
-        interval: 70
+        interval: 50
     })
 </script>

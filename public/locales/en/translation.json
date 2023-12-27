@@ -26,7 +26,7 @@
         "subtitle": "Education",
         "education": {
             "title": "Software Analysis and Development",
-            "description": "Servicion Nacional de Aprendizaje (SENA)",
+            "description": "Servicio Nacional de Aprendizaje (SENA)",
             "date": "2022 - 2024"
         },
         "jobs": {
@@ -52,37 +52,43 @@
                 "title": "Film Passport",
                 "description": "Film Passport is a web application that allows users to browse popular movies, search for movies, and add movies to their favorites list. Each movie has its own dedicated page with a description, trailer, and recommended similar movies.",
                 "live": "https://film-passport.netlify.app/",
-                "repository": "https://github.com/Ripdiegozz/FilmPassport"
+                "repository": "https://github.com/Ripdiegozz/FilmPassport",
+                "tech": "react,nextjs,tailwindcss,js,css,html"
             },
             "bluebyte": {
-                "title": "Bluebyte Shop",
-                "description": "This project is an e-commerce website. It uses HTML, CSS, TailwindCSS, JavaScript, React.js, React Hooks, Next.js, Sanity and Stripe. The project has a functional shopping cart, a product quantity selector and payments made through Stripe.",
+                "title": "Bluebyte",
+                "description": "Bluebyte is an e-commerce website utilizing HTML, CSS, TailwindCSS, JavaScript, React.js, React Hooks, Next.js, Sanity, and Stripe. The project features a functional shopping cart, a product quantity selector, and payments made through Stripe.",
                 "repository": "https://github.com/Ripdiegozz/BluebyteStore",
-                "live": "https://bluebyte-store.vercel.app/"
+                "live": "https://bluebyte-store.vercel.app/",
+                "tech": "react,nextjs,tailwindcss,ts,js,css,html"
             },
             "notewave": {
                 "title": "Notewave",
-                "description": "Notewave is your personal digital universe for capturing inspiration and ideas. It's a space where you can effortlessly craft notes, documents, and lists, and then, with a few clicks, share your creations with the world. Whether you're a creative thinker, a meticulous planner, or something in between, Notewave adapts to your unique style. It's a symphony of organization and creativity, designed to empower your thoughts and simplify your digital life. With Notewave, your ideas take center stage, and the world is your audience.",
+                "description": "Notewave is your go-to digital hub for capturing and sharing ideas effortlessly. Whether you're a creative thinker or meticulous planner, Notewave adapts to your unique style. It's a blend of organization and creativity designed to simplify your digital life, putting your ideas in the spotlight for the world to see.",
                 "repository": "https://github.com/Ripdiegozz/Notewave",
-                "live": "https://notewave-lake.vercel.app/"
+                "live": "https://notewave-lake.vercel.app/",
+                "tech": "react,nextjs,tailwindcss,ts,js,css,html"
             },
             "todoapp": {
-                "title": "Todo App",
-                "description": "A to-do list app built with HTML, CSS, and JavaScript using the LocalStorage API, which allows adding a deadline for each task and grouping them by date, is an ideal tool for those who need to have a more detailed control of their pending tasks.",
+                "title": "TaskQ",
+                "description": "TaskQ is a to-do list app built with HTML, CSS, and JavaScript using the LocalStorage API. It allows adding a deadline for each task and grouping them by date, making it an ideal tool for those who need to have a more detailed control of their pending tasks.",
                 "repository": "https://github.com/Ripdiegozz/TODO-app",
-	            "live": "https://todo-app-mu-pink.vercel.app/"
+	            "live": "https://todo-app-mu-pink.vercel.app/",
+                "tech": "react,js,css,html"
             },
             "adviceMentor": {
-                "title": "Advice Generator App",
-                "description": "This project is a simple advice generator app built with HTML, CSS, and JavaScript. It uses the Advice Slip JSON API to fetch random advice and display it on the page.",
+                "title": "Advice Mentor",
+                "description": "Advice Mentor is a simple advice generator app built with HTML, CSS, and JavaScript. It uses the Advice Slip JSON API to fetch random advice and displays it on the page",
                 "repository": "https://github.com/Ripdiegozz/advice-generator-app",
-	            "live": "https://advice-generator-app-ashen.vercel.app/"
+	            "live": "https://advice-generator-app-ashen.vercel.app/",
+                "tech": "react,js,css,html"
             },
             "eden": {
                 "title": "Eden",
-                "description": "EDEN: A community-driven chat application built to bring conversations to life in a vibrant virtual space. Connect with friends, share ideas, and explore a new realm of online communication. Join the EDEN experience today!",
+                "description": "Eden is a community-driven chat application built to bring conversations to life in a vibrant virtual space. Connect with friends, share ideas, and explore a new realm of online communication. Join the EDEN experience today!",
                 "repository": "https://github.com/Ripdiegozz/Eden",
-	            "live": "https://eden-production.up.railway.app/"
+	            "live": "https://eden-production.up.railway.app/",
+                "tech": "react,nextjs,tailwindcss,js,ts,planetscale,mysql,prisma,css,html"
             }
         }
     },
