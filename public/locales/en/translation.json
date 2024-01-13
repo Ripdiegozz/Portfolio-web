@@ -49,55 +49,73 @@
         "title": "Featured Projects",
         "data": {
             "filmpassport": {
-                "title": "Film Passport",
-                "description": "Film Passport is a web application that allows users to browse popular movies, search for movies, and add movies to their favorites list. Each movie has its own dedicated page with a description, trailer, and recommended similar movies.",
-                "live": "https://film-passport.netlify.app/",
-                "repository": "https://github.com/Ripdiegozz/FilmPassport",
-                "tech": "react,nextjs,tailwindcss,js,css,html"
+              "title": "Film Passport",
+              "description": "Film Passport is a web application that allows users to browse popular movies, search for movies, and add movies to their favorites list. Each movie has its own dedicated page with a description, trailer, and recommended similar movies.",
+              "live": "https://film-passport.netlify.app/",
+              "repository": "https://github.com/Ripdiegozz/FilmPassport",
+              "tech": "react,nextjs,tailwindcss,js,css,html",
+              "why": {
+                "title": "Why I built this project?", 
+                "data":"I developed Film Passport to enhance my skills in web development and to create a platform where users can discover and bookmark their favorite movies. This project allowed me to apply my knowledge of React, Next.js, and Tailwind CSS in a practical setting."
+              },
+              "learned": {
+                "title": "What I learned: ",
+                "data": "Developing Film Passport improved my abilities in creating responsive user interfaces, managing state in React, and optimizing data flow. I gained experience in implementing search functionality, fetching data from an API, and creating a seamless user experience."
+              }
             },
             "bluebyte": {
-                "title": "Bluebyte",
-                "description": "Bluebyte is an e-commerce website utilizing HTML, CSS, TailwindCSS, JavaScript, React.js, React Hooks, Next.js, Sanity, and Stripe. The project features a functional shopping cart, a product quantity selector, and payments made through Stripe.",
-                "repository": "https://github.com/Ripdiegozz/BluebyteStore",
-                "live": "https://bluebyte-store.vercel.app/",
-                "tech": "react,nextjs,tailwindcss,ts,js,css,html"
+              "title": "Bluebyte",
+              "description": "Bluebyte is an e-commerce website utilizing HTML, CSS, TailwindCSS, JavaScript, React.js, React Hooks, Next.js, Sanity, and Stripe. The project features a functional shopping cart, a product quantity selector, and payments made through Stripe.",
+              "repository": "https://github.com/Ripdiegozz/BluebyteStore",
+              "live": "https://bluebyte-store.vercel.app/",
+              "tech": "react,nextjs,tailwindcss,ts,js,css,html",
+              "why": {
+                "title": "Why I built this project?", 
+                "data":"Bluebyte was created to deepen my understanding of e-commerce development and payment integration. I aimed to build a functional online store with modern technologies and an intuitive user interface."
+              },
+              "learned": {
+                "title": "What I learned: ",
+                "data": "Developing Bluebyte expanded my knowledge of building secure and efficient e-commerce platforms. I gained practical experience in implementing payment gateways, managing state in React, and enhancing the overall user shopping experience."
+              }
             },
             "notewave": {
-                "title": "Notewave",
-                "description": "Notewave is your go-to digital hub for capturing and sharing ideas effortlessly. Whether you're a creative thinker or meticulous planner, Notewave adapts to your unique style. It's a blend of organization and creativity designed to simplify your digital life, putting your ideas in the spotlight for the world to see.",
-                "repository": "https://github.com/Ripdiegozz/Notewave",
-                "live": "https://notewave-lake.vercel.app/",
-                "tech": "react,nextjs,tailwindcss,ts,js,css,html"
-            },
-            "todoapp": {
-                "title": "TaskQ",
-                "description": "TaskQ is a to-do list app built with HTML, CSS, and JavaScript using the LocalStorage API. It allows adding a deadline for each task and grouping them by date, making it an ideal tool for those who need to have a more detailed control of their pending tasks.",
-                "repository": "https://github.com/Ripdiegozz/TODO-app",
-	            "live": "https://todo-app-mu-pink.vercel.app/",
-                "tech": "react,js,css,html"
-            },
-            "adviceMentor": {
-                "title": "Advice Mentor",
-                "description": "Advice Mentor is a simple advice generator app built with HTML, CSS, and JavaScript. It uses the Advice Slip JSON API to fetch random advice and displays it on the page",
-                "repository": "https://github.com/Ripdiegozz/advice-generator-app",
-	            "live": "https://advice-generator-app-ashen.vercel.app/",
-                "tech": "react,js,css,html"
+              "title": "Notewave",
+              "description": "Notewave is your go-to digital hub for capturing and sharing ideas effortlessly. Whether you're a creative thinker or meticulous planner, Notewave adapts to your unique style. It's a blend of organization and creativity designed to simplify your digital life, putting your ideas in the spotlight for the world to see.",
+              "repository": "https://github.com/Ripdiegozz/Notewave",
+              "live": "https://notewave-lake.vercel.app/",
+              "tech": "react,nextjs,tailwindcss,ts,js,css,html",
+              "why": {
+                "title": "Why I built this project?",
+                "data": "Notewave was born out of a personal need for a versatile note-taking application. I wanted to create a platform that seamlessly combines organization and creativity. This project aimed to simplify digital note-taking and idea sharing."
+              },
+              "learned": {
+                "title": "What I learned: ",
+                "data": "Building Notewave honed my skills in creating feature-rich applications. I learned to implement rich text editing, task management features, and responsive design. This project improved my abilities in optimizing user workflows and creating a seamless user experience."
+              }
             },
             "eden": {
-                "title": "Eden",
-                "description": "Eden is a community-driven chat application built to bring conversations to life in a vibrant virtual space. Connect with friends, share ideas, and explore a new realm of online communication. Join the EDEN experience today!",
-                "repository": "https://github.com/Ripdiegozz/Eden",
-	            "live": "https://eden-production.up.railway.app/",
-                "tech": "react,nextjs,tailwindcss,js,ts,planetscale,mysql,prisma,css,html"
+              "title": "Eden",
+              "description": "Eden is a community-driven chat application built to bring conversations to life in a vibrant virtual space. Connect with friends, share ideas, and explore a new realm of online communication. Join the EDEN experience today!",
+              "repository": "https://github.com/Ripdiegozz/Eden",
+              "live": "https://eden-production.up.railway.app/",
+              "tech": "react,nextjs,tailwindcss,js,ts,planetscale,mysql,prisma,css,html",
+              "why": {
+                "title": "Why I built this project?",
+                "data": "Eden was conceived with the goal of creating a dynamic and engaging community chat platform. I wanted to provide users with a vibrant virtual space for meaningful conversations and idea sharing. This project aimed to explore advanced technologies for real-time communication."
+              },
+              "learned": {
+                "title": "What I learned: ",
+                "data": "Developing Eden provided me with insights into real-time chat functionality, database management with MySQL and Prisma, and the intricacies of building a community-driven application. I gained experience in optimizing data flow, implementing secure authentication, and fostering user engagement in virtual communities."
+              }
             }
-        }
+          }
     },
     "contact": {
         "title": "Have an idea?",
         "subtitle": "Let's get in touch!"
     },
     "cv": {
-        "url": "/CV.pdf"
+        "url": "/Diego_Garcia_CV_EN.pdf"
     },
     "meta":{
         "title": "Diego Garcia - Software Developer",
