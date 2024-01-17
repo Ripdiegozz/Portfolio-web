@@ -154,14 +154,13 @@ const projects = [
 								</div>
 							</div>
 							<div class="flex items-center justify-around md:justify-start gap-4 p-6">
-								<button
-									class="border-[#4831d4] text-primary flex items-center gap-4 border-2 border-b-4 border-r-4 py-4 px-8 rounded-xl active:border-b-2 active:border-r-2 font-semibold transition-colors hover:bg-rose-400"
+								<a
+									class="border-[#4831d4] text-primary flex items-center gap-4 border-2 border-b-4 border-r-4 py-4 px-8 rounded-xl active:border-b-2 active:border-r-2 font-semibold transition-colors hover:bg-rose-400" target="_blank" aria-label="Live Website"
+									href={project.live}
 								>
-									<a href={project.live} target="_blank" aria-label="Live Website">
-										Live
-									</a>
+									Live
 									<i class="fa-solid fa-up-right-from-square"></i>
-								</button>
+								</a>
 								<a href={project.repository} target="_blank" aria-label="Github Repository">
 									<i class="fa-brands fa-github text-5xl text-primary hover:scale-110 hover:text-primary/90 transition" />
 								</a>
