@@ -1,143 +1,204 @@
 ---
-import {t} from 'i18next';
-
-import logo from '/dagadev_logo.webp'
-
+import { t } from "i18next";
+import { UsFlag } from "./Index";
+import esFlag from "/esFlag.svg";
+import logo from "/dagadev_logo.webp";
 ---
 
-<header class='z-50 w-full h-20 flex items-center justify-center bg-[#4831d4]'>
-    <nav class='h-20 flex items-center justify-around gap-10 w-[80%] md:w-[100%] md:justify-around lg:justify-center'>
-        <img src={logo} alt='dagadev-logo' class='w-[130px] h-[110px] hover:translate-y-[-2px] transition-transform'>
+<header
+  class="z-50 w-full h-20 flex items-center justify-center bg-[--eva-color]"
+>
+  <nav
+    class="h-20 flex items-center justify-around gap-10 w-[80%] md:w-[100%] md:justify-around lg:justify-center"
+  >
+    <img
+      src={logo}
+      alt="dagadev-logo"
+      class="w-[130px] h-[110px] hover:translate-y-[-2px] transition-transform"
+    />
 
-        <ul class='absolute transition-all translate-x-96 hidden lg:flex lg:flex-row lg:justify-center lg:items-center lg:relative lg:translate-x-0 lg:gap-8 lg:h-auto z-50' id='nav-list'>
-            {/* X button to close menu */}
-            <li class='absolute top-0 right-0 mt-5 mr-5'>
-                <button class="btn btn-circle swap swap-rotate bg-inherit border-0 hover:bg-inherit hover:border-0 lg:hidden z-50">
-                    <i class="fa-regular fa-circle-xmark text-2xl text-primary" />
-                </button>
-            </li>
-            <li>
-                <a href="#" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold' id="nav-btn">{t('navbar.home')}</a>
-            </li>
-            <li>
-                <a href="#stack" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold' id="nav-btn">{t('navbar.stack')}</a>
-            </li>
-            <li>
-                <a href="#about" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold' id="nav-btn">{t('navbar.about')}</a>
-            </li>
-            <li>
-                <a href="#projects" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold' id="nav-btn">{t('navbar.projects')}</a>
-            </li>
-            <li>
-                <a href="#contact" class='text-xl transition-all hover:text-[--eva-color] hover:underline underline-offset-8 font-bold' id="nav-btn">{t('navbar.contact')}</a>
-            </li>
-        </ul>
+    <ul
+      class="absolute transition-all translate-x-96 hidden lg:flex lg:flex-row lg:justify-center lg:items-center lg:relative lg:translate-x-0 lg:gap-8 lg:h-auto z-50"
+      id="nav-list"
+    >
+      {/* X button to close menu */}
+      <li class="absolute top-0 right-0 mt-5 mr-5">
+        <button
+          class="btn btn-circle swap swap-rotate bg-inherit border-0 hover:bg-inherit hover:border-0 lg:hidden z-50"
+        >
+          <i class="fa-regular fa-circle-xmark text-2xl text-primary"></i>
+        </button>
+      </li>
+      <li>
+        <a
+          href="#"
+          class="text-xl text-[#4831d4] transition-all hover:text-[#4831d4] hover:underline underline-offset-8 font-bold"
+          id="nav-btn">{t("navbar.home")}</a
+        >
+      </li>
+      <li>
+        <a
+          href="#stack"
+          class="text-xl text-[#4831d4] transition-all hover:text-[#4831d4] hover:underline underline-offset-8 font-bold"
+          id="nav-btn">{t("navbar.stack")}</a
+        >
+      </li>
+      <li>
+        <a
+          href="#about"
+          class="text-xl text-[#4831d4] transition-all hover:text-[#4831d4] hover:underline underline-offset-8 font-bold"
+          id="nav-btn">{t("navbar.about")}</a
+        >
+      </li>
+      <li>
+        <a
+          href="#projects"
+          class="text-xl text-[#4831d4] transition-all hover:text-[#4831d4] hover:underline underline-offset-8 font-bold"
+          id="nav-btn">{t("navbar.projects")}</a
+        >
+      </li>
+      <li>
+        <a
+          href="#contact"
+          class="text-xl text-[#4831d4] transition-all hover:text-[#4831d4] hover:underline underline-offset-8 font-bold"
+          id="nav-btn">{t("navbar.contact")}</a
+        >
+      </li>
+    </ul>
 
-        <div class="dropdown">
-            <label tabindex="0" class="btn bg-[#ccf381] text-gray-800 hover:bg-[#ccf381] w-16">
-                <img src="/language.png" alt="lang-flag" class="w-8 h-6">
-            </label>
-            <ul tabindex="0" class="dropdown-content flex flex-col items-center justify-center z-[1] menu p-2 shadow rounded-box w-22 bg-[#ccf381] text-white">
-                <li>
-                    <a href="/en">
-                        <img src="/united-states.png" alt="usa-flag" class="w-4 h-4">
-                    </a>
-                </li>
-                <li>
-                    <a href="/es">
-                        <img src="/spain.png" alt="spain-flag" class="w-4 h-4">
-                    </a>
-                </li>
-            </ul>
-        </div>
+    <div class="dropdown">
+      <label
+        tabindex="0"
+        class="btn bg-[#4831d4] text-white hover:bg-[#4831d4] w-16"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"
+          ><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            fill="#ccf381"
+            d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z"
+          ></path></svg
+        >
+      </label>
+      <ul
+        tabindex="0"
+        class="dropdown-content flex flex-col items-center justify-center z-[1] menu p-2 shadow rounded-box w-22 bg-[#4831d4] text-[--eva-color]"
+      >
+        <li>
+          <a href="/en">
+            <UsFlag />
+          </a>
+        </li>
+        <li>
+          <a href="/es">
+            <img src={esFlag} class="h-5 w-8" alt="spain-flag">
+          </a>
+        </li>
+      </ul>
+    </div>
 
-        <label class="btn btn-circle swap swap-rotate bg-inherit border-0 hover:bg-inherit hover:border-0 lg:hidden z-50" for="burger-menu">
-            <!-- this hidden checkbox controls the state -->
-            <input type="checkbox" id="burger-menu" name="bg-icon" class="bg-inherit border-0 hover:bg-inherit hover:border-0" />
-            <!-- hamburger icon -->
-            <svg class="fill-current bg-inherit border-0 hover:bg-inherit hover:border-0" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
-                <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/>
-            </svg>
-        </label>
-    </nav>  
+    <label
+      class="btn btn-circle swap swap-rotate bg-inherit border-0 hover:bg-inherit hover:border-0 lg:hidden z-50"
+      for="burger-menu"
+    >
+      <!-- this hidden checkbox controls the state -->
+      <input
+        type="checkbox"
+        id="burger-menu"
+        name="bg-icon"
+        class="bg-inherit border-0 hover:bg-inherit hover:border-0"
+      />
+      <!-- hamburger icon -->
+      <svg
+        class=" bg-inherit border-0 hover:bg-inherit hover:border-0"
+        fill="#4831d4"
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 512 512"
+      >
+        <path
+          d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+        ></path>
+      </svg>
+    </label>
+  </nav>
 </header>
 
 <script>
-    const menu = document.querySelector('#burger-menu');
-    const nav = document.querySelector('#nav-list');
-    const navBtn = document.querySelectorAll('#nav-btn');    
-    const main = document.querySelector('main');
+  const menu = document.querySelector("#burger-menu");
+  const nav = document.querySelector("#nav-list");
+  const navBtn = document.querySelectorAll("#nav-btn");
+  const main = document.querySelector("main");
 
-    menu.addEventListener('change', () => {
-        // Add blur to the body when the nav menu is active
+  menu.addEventListener("change", () => {
+    // Add blur to the body when the nav menu is active
 
-        if (nav.classList.contains('active')) {
-            main.classList.remove('blurry')
-            
-        } else {
-            main.classList.add('blurry')
-        }
-
-        if (nav.classList.contains('active')) {
-            nav.classList.remove('active')
-        } else {
-            nav.classList.add('active')
-        }
-    })
-
-    navBtn.forEach(btn => {
-        btn.classList.remove('hover:text-[--eva-color]')
-        if (nav.classList.contains('active')) {
-            btn.classList.add('pl-8')
-        } else {
-            btn.classList.remove('pl-8')
-        }
-        // Remove the active class when the user clicks on a nav link
-        btn.addEventListener('click', () => {
-            nav.classList.remove('active')
-        })
-    })
-
-    let mdResolution = window.matchMedia("(min-width: 768px)")
-    
-    function mediaQueries (resolution) {
-        if (resolution.matches) { // If media query matches
-           nav.classList.remove('active');
-        }
+    if (nav.classList.contains("active")) {
+      main.classList.remove("blurry");
+    } else {
+      main.classList.add("blurry");
     }
 
-    mediaQueries(mdResolution) // Call listener function at run time
-    mdResolution.addEventListener('change', mediaQueries) // Attach listener function on state changes
+    if (nav.classList.contains("active")) {
+      nav.classList.remove("active");
+    } else {
+      nav.classList.add("active");
+    }
+  });
 
-    // if users press outside the nav menu, it will close and remove the blur effect
-    window.addEventListener('click', (e) => {
-        if (e.target != nav && e.target != menu) {
-            nav.classList.remove('active')
+  navBtn.forEach((btn) => {
+    btn.classList.remove("hover:text-[--eva-color]");
+    if (nav.classList.contains("active")) {
+      btn.classList.add("pl-8");
+    } else {
+      btn.classList.remove("pl-8");
+    }
+    // Remove the active class when the user clicks on a nav link
+    btn.addEventListener("click", () => {
+      nav.classList.remove("active");
+    });
+  });
 
-            if (document.body.classList.contains('blurry')) {
-                document.body.classList.remove('blurry')
-            }
-        }
-    })
+  let mdResolution = window.matchMedia("(min-width: 768px)");
 
+  function mediaQueries(resolution) {
+    if (resolution.matches) {
+      // If media query matches
+      nav.classList.remove("active");
+    }
+  }
+
+  mediaQueries(mdResolution); // Call listener function at run time
+  mdResolution.addEventListener("change", mediaQueries); // Attach listener function on state changes
+
+  // if users press outside the nav menu, it will close and remove the blur effect
+  window.addEventListener("click", (e) => {
+    if (e.target != nav && e.target != menu) {
+      nav.classList.remove("active");
+
+      if (document.body.classList.contains("blurry")) {
+        document.body.classList.remove("blurry");
+      }
+    }
+  });
 </script>
 
 <style>
-    #nav-list.active {
-        background: var(--eva-color);
-        color: #4831d4;
-        transform: translateX(-22.50%);
-        position: fixed;
-        border-radius: 15px;
-        gap: 2rem;
-        bottom: 0;
-        right: 0;
-        top: 0;
-        left: 0;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        transition: 1s all ease-in-out;
-    }
+  #nav-list.active {
+    background: var(--eva-color);
+    color: #4831d4;
+    transform: translateX(-22.5%);
+    position: fixed;
+    border-radius: 15px;
+    gap: 2rem;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    transition: 1s all ease-in-out;
+  }
 </style>

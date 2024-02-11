@@ -1,187 +1,191 @@
 ---
-import {t} from 'i18next';
+import { t } from "i18next";
 
-import filmPassport from '../assets/images/film-passport/1.webp'
-import bluebyteShop from '../assets/images/bluebyte-shop/1.webp'
-import notewave from '../assets/images/notewave/1.webp'
-import eden from '../assets/images/Eden/1.webp'
+import filmPassport from "../assets/images/film-passport/1.webp";
+import bluebyteShop from "../assets/images/bluebyte-shop/1.webp";
+import notewave from "../assets/images/notewave/1.webp";
+import eden from "../assets/images/Eden/1.webp";
 
 const projects = [
-	{
-		img: eden,
-		name: t("projects.data.eden.title"),
-		description: t("projects.data.eden.description"),
-		repository: t("projects.data.eden.repository"),
-		live: t("projects.data.eden.live"),
-		tech: t("projects.data.eden.tech"),
-		why: {
-			title: t("projects.data.eden.why.title"),
-			data: t("projects.data.eden.why.data")
-		},
-		learned: {
-			title: t("projects.data.eden.learned.title"),
-			data: t("projects.data.eden.learned.data")
-		}
-	},
-	{
-		img: bluebyteShop,
-		name: t("projects.data.bluebyte.title"),
-		description: t("projects.data.bluebyte.description"),
-		repository: t("projects.data.bluebyte.repository"),
-		live: t("projects.data.bluebyte.live"),
-		tech: t("projects.data.bluebyte.tech"),
-		why: {
-			title: t("projects.data.bluebyte.why.title"),
-			data: t("projects.data.bluebyte.why.data")
-		},
-		learned: {
-			title: t("projects.data.bluebyte.learned.title"),
-			data: t("projects.data.bluebyte.learned.data")
-		}
-	},
-	{
-		img: notewave,
-		name: t("projects.data.notewave.title"),
-		description: t("projects.data.notewave.description"),
-		repository: t("projects.data.notewave.repository"),
-		live: t("projects.data.notewave.live"),
-		tech: t("projects.data.notewave.tech"),
-		why: {
-			title: t("projects.data.notewave.why.title"),
-			data: t("projects.data.notewave.why.data")
-		},
-		learned: {
-			title: t("projects.data.notewave.learned.title"),
-			data: t("projects.data.notewave.learned.data")
-		}
-	},
-	{
-		img: filmPassport,
-		name: t("projects.data.filmpassport.title"),
-		description: t("projects.data.filmpassport.description"),
-		repository: t("projects.data.filmpassport.repository"),
-		live: t("projects.data.filmpassport.live"),
-		tech: t("projects.data.filmpassport.tech"),
-		why: {
-			title: t("projects.data.filmpassport.why.title"),
-			data: t("projects.data.filmpassport.why.data")
-		},
-		learned: {
-			title: t("projects.data.filmpassport.learned.title"),
-			data: t("projects.data.filmpassport.learned.data")
-		}
-	}
-]
+  {
+    img: eden,
+    name: t("projects.data.eden.title"),
+    description: t("projects.data.eden.description"),
+    repository: t("projects.data.eden.repository"),
+    live: t("projects.data.eden.live"),
+    tech: t("projects.data.eden.tech"),
+    why: {
+      title: t("projects.data.eden.why.title"),
+      data: t("projects.data.eden.why.data"),
+    },
+    learned: {
+      title: t("projects.data.eden.learned.title"),
+      data: t("projects.data.eden.learned.data"),
+    },
+  },
+  {
+    img: bluebyteShop,
+    name: t("projects.data.bluebyte.title"),
+    description: t("projects.data.bluebyte.description"),
+    repository: t("projects.data.bluebyte.repository"),
+    live: t("projects.data.bluebyte.live"),
+    tech: t("projects.data.bluebyte.tech"),
+    why: {
+      title: t("projects.data.bluebyte.why.title"),
+      data: t("projects.data.bluebyte.why.data"),
+    },
+    learned: {
+      title: t("projects.data.bluebyte.learned.title"),
+      data: t("projects.data.bluebyte.learned.data"),
+    },
+  },
+  {
+    img: notewave,
+    name: t("projects.data.notewave.title"),
+    description: t("projects.data.notewave.description"),
+    repository: t("projects.data.notewave.repository"),
+    live: t("projects.data.notewave.live"),
+    tech: t("projects.data.notewave.tech"),
+    why: {
+      title: t("projects.data.notewave.why.title"),
+      data: t("projects.data.notewave.why.data"),
+    },
+    learned: {
+      title: t("projects.data.notewave.learned.title"),
+      data: t("projects.data.notewave.learned.data"),
+    },
+  },
+  {
+    img: filmPassport,
+    name: t("projects.data.filmpassport.title"),
+    description: t("projects.data.filmpassport.description"),
+    repository: t("projects.data.filmpassport.repository"),
+    live: t("projects.data.filmpassport.live"),
+    tech: t("projects.data.filmpassport.tech"),
+    why: {
+      title: t("projects.data.filmpassport.why.title"),
+      data: t("projects.data.filmpassport.why.data"),
+    },
+    learned: {
+      title: t("projects.data.filmpassport.learned.title"),
+      data: t("projects.data.filmpassport.learned.data"),
+    },
+  },
+];
 ---
 
 <section class="px-1 mt-16 bg-[#ccf381] py-10" id="projects">
-    <div class="container mx-auto">
-		<h2 class="text-center text-4xl font-bold py-6 text-[#4831d4] reveal">
-			{t("projects.title")}
-		</h2>
-		<div class="flex flex-col w-full min-h-screen reveal mt-6">
-			<main
-			  class="flex min-h-[calc(100vh_-_theme(spacing.16))] flex-1 flex-col gap-4 p-0 md:gap-8 md:p-0"
-			>
-			  <div
-				class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl w-full mx-auto"
-			  >
-				{
-					projects.map((project) => (
-						<div
-							class="rounded-lg border-2 border-r-4 border-l-4 border-b-4 border-[#4831d4] bg-card text-card-foreground shadow-sm"
-							data-v0-t="card"
-						>
-							<div class="space-y-1.5 p-6 pb-0 flex flex-col items-center gap-4 w-full">
-								<div class="grid gap-1 text-primary">
-									<h3 class="text-2xl font-semibold leading-none tracking-tight pb-2">
-										{project.name}
-									</h3>
-									<p class="text-md text-muted-foreground pb-2">
-										{project.description}
-									</p>
-								</div>
-								<div class="pt-2 pb-6 md:pt-2 grid gap-2 w-full">
-									<img
-										src={project.img}
-										alt={project.name}
-										style="aspect-ratio: 300 / 300; object-fit: cover;"
-										class="w-full h-[320px] rounded-md border-2 border-[#4831d4] border-r-4 border-b-4"
-									/>
-								</div>
-							</div>
-							<div class="p-6 pt-2 pb-0 px-6 md:pt-2 grid gap-2">
-								<div class="grid gap-1 text-primary">
-									<h4 class="font-semibold pt-1">{project.why.title}</h4>
+  <div class="container mx-auto">
+    <h2 class="text-center text-4xl font-bold py-6 text-[#4831d4] reveal">
+      {t("projects.title")}
+    </h2>
+    <div class="flex flex-col w-full min-h-screen reveal mt-6">
+      <main
+        class="flex min-h-[calc(100vh_-_theme(spacing.16))] flex-1 flex-col gap-4 p-0 md:gap-8 md:p-0"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl w-full mx-auto"
+        >
+          {
+            projects.map((project) => (
+              <div
+                class="rounded-lg border-2 border-r-4 border-l-4 border-b-4 border-[#4831d4] bg-card text-card-foreground shadow-sm"
+                data-v0-t="card"
+              >
+                <div class="space-y-1.5 p-6 pb-0 flex flex-col items-center gap-4 w-full">
+                  <div class="grid gap-1 text-primary">
+                    <h3 class="text-2xl font-semibold leading-none tracking-tight pb-2">
+                      {project.name}
+                    </h3>
+                    <p class="text-md text-muted-foreground pb-2">
+                      {project.description}
+                    </p>
+                  </div>
+                  <div class="pt-2 pb-6 md:pt-2 grid gap-2 w-full">
+                    <img
+                      src={project.img}
+                      alt={project.name}
+                      style="aspect-ratio: 300 / 300; object-fit: cover;"
+                      class="w-full h-[320px] rounded-md border-2 border-[#4831d4] border-r-4 border-b-4"
+                    />
+                  </div>
+                </div>
+                <div class="p-6 pt-2 pb-0 px-6 md:pt-2 grid gap-2">
+                  <div class="grid gap-1 text-primary">
+                    <h4 class="font-semibold pt-1">{project.why.title}</h4>
 
-									<p class="text-md text-muted-foreground pb-2">
-										{project.why.data}
-									</p>
-								</div>
-							</div>
-							<div class="p-6 pt-0 pb-0 px-6 md:pt-2 grid gap-2">
-								<div class="grid gap-1 text-primary">
-									<h4 class="font-semibold pt-1">{project.learned.title}</h4>
-									
-									<p class="text-md text-muted-foreground pb-2">
-										{project.learned.data}
-									</p>
-								</div>
-							</div>
-							<div class="p-6 pt-0 pb-0 px-6 md:pt-2 grid gap-2">
-								<div class="grid gap-1 text-primary">
-									<h4 class="font-semibold pt-1">{project.name} Stack: </h4>
-									<div class="flex flex-wrap gap-2 py-2">
-										{
-											project.tech.split(',').map((tech) => (
-												<div
-													class="p-0 transition-transform hover:scale-105 tooltip tooltip-bottom"
-													data-tip={tech}
-												>
-													<p class="text-md text-center">
-														<a href="https://skillicons.dev" aria-label={tech}>
-															<img
-															src={`https://skillicons.dev/icons?i=${tech}`}
-															alt={tech}
-															class="h-8 w-8"
-															/>
-														</a>
-													</p>
-												</div>
-											))
-										}
-									</div>
-								</div>
-							</div>
-							<div class="flex items-center justify-around md:justify-start gap-4 p-6">
-								<a
-									class="border-[#4831d4] text-primary flex items-center gap-4 border-2 border-b-4 border-r-4 py-4 px-8 rounded-xl active:border-b-2 active:border-r-2 font-semibold transition-colors hover:bg-rose-400" target="_blank" aria-label="Live Website"
-									href={project.live}
-								>
-									Live
-									<i class="fa-solid fa-up-right-from-square"></i>
-								</a>
-								<a href={project.repository} target="_blank" aria-label="Github Repository">
-									<i class="fa-brands fa-github text-5xl text-primary hover:scale-110 hover:text-primary/90 transition" />
-								</a>
-							</div>
-						</div>
-					))
-				}
-			  </div>
-			</main>
-		</div>
-	</div>
+                    <p class="text-md text-muted-foreground pb-2">
+                      {project.why.data}
+                    </p>
+                  </div>
+                </div>
+                <div class="p-6 pt-0 pb-0 px-6 md:pt-2 grid gap-2">
+                  <div class="grid gap-1 text-primary">
+                    <h4 class="font-semibold pt-1">{project.learned.title}</h4>
+
+                    <p class="text-md text-muted-foreground pb-2">
+                      {project.learned.data}
+                    </p>
+                  </div>
+                </div>
+                <div class="p-6 pt-0 pb-0 px-6 md:pt-2 grid gap-2">
+                  <div class="grid gap-1 text-primary">
+                    <h4 class="font-semibold pt-1">{project.name} Stack: </h4>
+                    <div class="flex flex-wrap gap-2 py-2">
+                      {project.tech.split(",").map((tech) => (
+                        <div
+                          class="p-0 transition-transform hover:scale-105 tooltip tooltip-bottom"
+                          data-tip={tech}
+                        >
+                          <p class="text-md text-center">
+                            <a href="https://skillicons.dev" aria-label={tech}>
+                              <img
+                                src={`https://skillicons.dev/icons?i=${tech}`}
+                                alt={tech}
+                                class="h-8 w-8"
+                              />
+                            </a>
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-center justify-around md:justify-start gap-4 p-6">
+                  <a
+                    class="border-[#4831d4] text-primary flex items-center gap-4 border-2 border-b-4 border-r-4 py-4 px-8 rounded-xl active:border-b-2 active:border-r-2 font-semibold transition-colors hover:bg-rose-400"
+                    target="_blank"
+                    aria-label="Live Website"
+                    href={project.live}
+                  >
+                    Live
+                    <i class="fa-solid fa-up-right-from-square" />
+                  </a>
+                  <a
+                    href={project.repository}
+                    target="_blank"
+                    aria-label="Github Repository"
+                  >
+                    <i class="fa-brands fa-github text-5xl text-primary hover:scale-110 hover:text-primary/90 transition" />
+                  </a>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </main>
+    </div>
+  </div>
 </section>
 
 <script>
-    import scrollreveal from 'scrollreveal';
+  import scrollreveal from "scrollreveal";
 
-    scrollreveal().reveal(".reveal", {
-        delay: 50,
-        duration: 450,
-        distance: '50px',
-        origin: 'bottom',
-        interval: 50
-    })
+  scrollreveal().reveal(".reveal", {
+    delay: 50,
+    duration: 450,
+    distance: "50px",
+    origin: "bottom",
+    interval: 50,
+  });
 </script>

@@ -1,73 +1,108 @@
 ---
-import {t} from 'i18next';
+import { t } from "i18next";
+import waiting from "/Waiting.svg";
 ---
 
-
 <article class="flex flex-col items-center mt-16 px-4 bg-[#4831d4]" id="about">
-    <div class="container mx-auto">
-        
-        <h2 class="text-4xl font-bold text-center pb-5 text-[--eva-color] reveal">
-            {t('about.title')}
-        </h2>
+  <div class="container mx-auto">
+    <h2 class="text-4xl font-bold text-center pb-5 text-[--eva-color] reveal">
+      {t("about.title")}
+    </h2>
 
-        <p class="text-lg pt-4 md:w-[45%] mx-auto reveal">
-            {t('about.description')}
-            <br /><br />
-            {t('about.description_2')}
+    <div
+      class="flex flex-col md:flex-row row-wrap w-full items-center justify-center pb-20"
+    >
+      <div class="w-full md:w-[50%]">
+        <p class="text-lg pt-4 w-[85%] mx-auto reveal">
+          {t("about.description")}
+          <br /><br />
+          {t("about.description_2")}
         </p>
-
         <a
-        class="mt-6 mb-10 static flex items-center gap-4 border-2 border-b-4 border-r-4 py-4 px-10 rounded-xl hover:bg-rose-400 active:border-b-2 active:border-r-2 transition-colors w-[190px] mx-auto reveal"
-        href={t('cv.url')}
+          class="mt-6 mb-10 static flex items-center gap-4 border-2 border-b-4 border-r-4 py-4 px-10 rounded-xl hover:bg-rose-400 active:border-b-2 active:border-r-2 transition-colors w-[190px] mx-auto reveal"
+          href={t("cv.url")}
         >
-            Curriculum
-            <i class="fa-solid fa-file-arrow-down"></i>
+          Curriculum
+          <i class="fa-solid fa-file-arrow-down"></i>
         </a>
-
-        <h2 class="text-center text-4xl font-bold text-[--eva-color] reveal">{t('about.jobs.title')}</h2>
-
-        <div class="flex mx-auto mt-4 md:space-between flex-col md:flex-row md:gap-8 items-center reveal">
-            <div class="p-4 border-2 mt-4 mb-4 rounded-lg w-full h-auto md:h-80 lg:h-72 flex flex-col justify-center transition md:w-[50%] hover:text-[--eva-color] reveal">
-                <h3 class="text-2xl font-bold">{t('about.jobs.1.company')}</h3>
-                <p class="text-lg font-semibold badge bg-[--eva-color] text-[#4831d4] rounded-md py-2.5">{t('about.jobs.1.title')}</p>
-                <p class="text-lg">{t('about.jobs.1.date')}</p>
-                <p class="text-lg mt-2 pb-2">{t('about.jobs.1.description')}</p>
-            </div>
-
-            <div class="p-4 border-2 mt-4 mb-4 rounded-lg w-full h-auto md:h-80 lg:h-72 flex flex-col justify-start transition md:w-[50%] hover:text-[--eva-color] reveal">
-                <h3 class="text-2xl font-bold">{t('about.jobs.2.company')}</h3>
-                <p class="text-lg font-semibold badge bg-[--eva-color] text-[#4831d4] rounded-md py-2.5">{t('about.jobs.2.title')}</p>
-                <p class="text-lg">{t('about.jobs.2.date')}</p>
-                <p class="text-lg py-2">{t('about.jobs.2.description')}</p>
-            </div>
-        </div>
-
-        <h2 class="text-center text-4xl mt-4 font-bold text-[--eva-color] reveal">{t('about.subtitle')}</h2>
-
-        <div class="flex mx-auto mt-4 md:space-between flex-col md:flex-row md:gap-8 items-center reveal">
-            <div class="p-4 border-2 mt-4 mb-4 rounded-lg w-full h-auto md:h-44 flex flex-col justify-center transition md:w-[50%] hover:text-[--eva-color] reveal">
-                <h3 class="text-2xl font-bold">{t('about.education.title')}</h3>
-                <p class="text-xl">{t('about.education.description')}</p>
-                <p class="text-lg pt-2">{t('about.education.date')}</p>
-            </div>
-
-            <div class="p-4 border-2 mt-4 mb-4 rounded-lg w-full h-auto md:h-44 flex flex-col justify-center transition md:w-[50%] hover:text-[--eva-color] reveal">
-                <h3 class="text-2xl font-bold">Front-End Development</h3>
-                <p class="text-xl">Oracle Next Eduaction</p>
-                <p class="text-lg pt-2">2022 - 2023</p>
-            </div>
-        </div>
+      </div>
+      <div class="w-full md:w-[50%] flex flex-row gap-2 items-center justify-center pr-4">
+        <img
+          src={waiting}
+          alt="Waiting..."
+          class="w-full h-96 mt-4 mx-auto reveal"
+        />
+      </div>
     </div>
+
+    <h2 class="text-center text-4xl font-bold text-[--eva-color] reveal">
+      {t("about.jobs.title")}
+    </h2>
+
+    <div
+      class="flex mx-auto mt-4 md:space-between flex-col md:flex-row md:gap-8 items-center reveal"
+    >
+      <div
+        class="p-4 border-2 mt-4 mb-4 rounded-lg w-full h-auto md:h-80 lg:h-72 flex flex-col justify-center transition md:w-[50%] hover:text-[--eva-color] reveal"
+      >
+        <h3 class="text-2xl font-bold">{t("about.jobs.1.company")}</h3>
+        <p
+          class="text-lg font-semibold badge bg-[--eva-color] text-[#4831d4] rounded-md py-2.5"
+        >
+          {t("about.jobs.1.title")}
+        </p>
+        <p class="text-lg">{t("about.jobs.1.date")}</p>
+        <p class="text-lg mt-2 pb-2">{t("about.jobs.1.description")}</p>
+      </div>
+
+      <div
+        class="p-4 border-2 mt-4 mb-4 rounded-lg w-full h-auto md:h-80 lg:h-72 flex flex-col justify-start transition md:w-[50%] hover:text-[--eva-color] reveal"
+      >
+        <h3 class="text-2xl font-bold">{t("about.jobs.2.company")}</h3>
+        <p
+          class="text-lg font-semibold badge bg-[--eva-color] text-[#4831d4] rounded-md py-2.5"
+        >
+          {t("about.jobs.2.title")}
+        </p>
+        <p class="text-lg">{t("about.jobs.2.date")}</p>
+        <p class="text-lg py-2">{t("about.jobs.2.description")}</p>
+      </div>
+    </div>
+
+    <h2 class="text-center text-4xl mt-4 font-bold text-[--eva-color] reveal">
+      {t("about.subtitle")}
+    </h2>
+
+    <div
+      class="flex mx-auto mt-4 md:space-between flex-col md:flex-row md:gap-8 items-center reveal"
+    >
+      <div
+        class="p-4 border-2 mt-4 mb-4 rounded-lg w-full h-auto md:h-44 flex flex-col justify-center transition md:w-[50%] hover:text-[--eva-color] reveal"
+      >
+        <h3 class="text-2xl font-bold">{t("about.education.title")}</h3>
+        <p class="text-xl">{t("about.education.description")}</p>
+        <p class="text-lg pt-2">{t("about.education.date")}</p>
+      </div>
+
+      <div
+        class="p-4 border-2 mt-4 mb-4 rounded-lg w-full h-auto md:h-44 flex flex-col justify-center transition md:w-[50%] hover:text-[--eva-color] reveal"
+      >
+        <h3 class="text-2xl font-bold">Front-End Development</h3>
+        <p class="text-xl">Oracle Next Eduaction</p>
+        <p class="text-lg pt-2">2022 - 2023</p>
+      </div>
+    </div>
+  </div>
 </article>
 
 <script>
-    import scrollreveal from 'scrollreveal';
+  import scrollreveal from "scrollreveal";
 
-    scrollreveal().reveal(".reveal", {
-        delay: 50,
-        duration: 450,
-        distance: '50px',
-        origin: 'bottom',
-        interval: 50
-    });
+  scrollreveal().reveal(".reveal", {
+    delay: 50,
+    duration: 450,
+    distance: "50px",
+    origin: "bottom",
+    interval: 50,
+  });
 </script>
