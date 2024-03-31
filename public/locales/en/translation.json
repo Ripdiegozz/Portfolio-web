@@ -97,7 +97,7 @@
               "title": "Eden",
               "description": "Eden is a community-driven chat application built to bring conversations to life in a vibrant virtual space. Connect with friends, share ideas, and explore a new realm of online communication. Join the EDEN experience today!",
               "repository": "https://github.com/Ripdiegozz/Eden",
-              "live": "https://eden-production.up.railway.app/",
+              "live": "https://eden-coral.vercel.app/",
               "tech": "react,nextjs,tailwindcss,js,ts,planetscale,mysql,prisma,css,html",
               "why": {
                 "title": "Why I built this project?",
