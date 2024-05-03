@@ -1,12 +1,12 @@
 ---
-import developer from '../assets/dev.gif';
+import man from '../assets/man.gif';
 import {t} from 'i18next';
 ---
 
 <section class="bg-[--eva-color] py-10">
     <div class="container mx-auto mb-2 mt-0 py-10 text-center">
         <div class="flex flex-col md:grid md:grid-cols-2 md:flex-none md:items-center justify-center gap-0 md:gap-14 mx-auto max-w-5xl">
-            <img src={developer.src} alt="A photo of mine" class='px-4 mx-auto' id="my-photo" />
+            <img src={man.src} alt="A photo of mine" class='px-4 mx-auto' id="my-photo" />
             <article class="p-4 reveal text-[#4831d4] flex flex-col items-center justify-center" id="texto-animado">
                 <h1 
                 class='text-4xl font-bold text-center text-gradient md:text-5xl aparecer'
@@ -68,14 +68,12 @@ import {t} from 'i18next';
     ) {
         roles = [
             "Desarrollador<br>Full-Stack",
-            "Desarrollador de<br>Software",
-            "Analista de<br>Software"
+            "Desarrollador de<br>Software"
         ]
     } else {
         roles = [
             "Full-Stack<br>Developer",
-            "Software<br>Developer",
-            "Software<br>Analyst"
+            "Software<br>Developer"
         ]
     }
 

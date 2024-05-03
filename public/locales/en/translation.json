@@ -1,128 +1,128 @@
-{   
-    
-    "navbar": {
-        "home": "Home",
-        "stack": "Development Stack",
-        "about": "About",
-        "projects": "Projects",
-        "contact": "Contact",
-        "language": "Language"
+{
+  "navbar": {
+    "home": "Home",
+    "stack": "Development Stack",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "main": {
+    "title": "Front-End Developer",
+    "subtitle": "Hi, I am Diego. A ",
+    "subtitle_2": "based in Colombia. 📍🇨🇴",
+    "subtitle_highlighted": "passionate developer",
+    "contact": "Find me in:"
+  },
+  "devStack": {
+    "title": "Development Stack",
+    "subtitle": "There are some of the technologies I use for my projects."
+  },
+  "about": {
+    "title": "About me",
+    "description": "My name is Diego Garcia, and I'm passionate about shaping the digital landscape. My journey began in 2021 when I tackled the Mision TIC Bootcamp while still in high school. It ignited a spark, and after graduation, I enrolled in Software Analysis and Development at SENA. There, I've delved into the fundamentals – requirements engineering, the software development lifecycle, agile methodologies – the tools that bring ideas to life. Databases hold a particular fascination for me, offering a structured world for information to thrive. And of course, I'm honing my skills in the essential languages – Python, Java, JavaScript – the building blocks of the web. My focus is on crafting innovative solutions that leave their mark on the internet.  What areas of the digital world excite you the most?",
+    "description_2": "Fast-forward to today, my main focus these days is building accessible, inclusive products and digital experiences for a variety of clients.",
+    "subtitle": "Education",
+    "education": {
+      "title": "Software Analysis and Development",
+      "description": "Servicio Nacional de Aprendizaje (SENA)",
+      "date": "2022 - 2024"
     },
-    "main": {
+    "jobs": {
+      "title": "Work Experience",
+      "1": {
+        "company": "SuperGiros",
+        "title": "Full-Stack Developer",
+        "date": "Aug 2023 - Present",
+        "description": "I currently lead software development at SuperGIROS.  My role involves driving innovation by creating new solutions and keeping existing software running smoothly. I ensure previously developed software continues to function flawlessly, while also integrating new features to boost operational efficiency. On the technical side, I leverage a versatile technology stack. This includes back-end development using Node.js, Express.js, Java 8, and SpringBoot for microservices, along with front-end development with Angular. To manage data effectively, I utilize both Oracle SQL and MySQL relational databases.  Additionally, I take responsibility for creating Docker images and implementing containerized deployments using Docker for streamlined software delivery."
+      },
+      "2": {
+        "company": "Freelance",
         "title": "Front-End Developer",
-        "subtitle": "Hi, I am Diego. A ",
-        "subtitle_2": "based in Colombia. 📍",
-        "subtitle_highlighted": "passionate developer",
-        "contact": "Find me in:"
-    },
-    "devStack": {
-        "title": "Development Stack",
-        "subtitle": "There are some of the technologies I use for my projects."
-    },
-    "about": {
-        "title": "About me",
-        "description": "Hello! My name is Diego Garcia and I enjoy creating things that live on the internet. My interest in web development started back in 2020 when I decided to try creating my own websites about things, I like such as videogames or artists — that taught me a lot about HTML & CSS!",
-        "description_2": "Fast-forward to today, my main focus these days is building accessible, inclusive products and digital experiences for a variety of clients.",
-        "subtitle": "Education",
-        "education": {
-            "title": "Software Analysis and Development",
-            "description": "Servicio Nacional de Aprendizaje (SENA)",
-            "date": "2022 - 2024"
-        },
-        "jobs": {
-            "title": "Work Experience",
-            "1": {
-                "company": "SuperGiros",
-                "title": "Full-Stack Developer",
-                "date": "Aug 2023 - Present",
-                "description": "I currently work as a Full-Stack Developer at SuperGiros, a financial services company. My job consists of creating and maintaining web applications for internal and external use, as well as creating and maintaining websites for the company."
-            },
-            "2": {
-                "company": "Freelance",
-                "title": "Front-End Developer",
-                "date": "Aug 2021- Present",
-                "description": "I've been working as a freelance developer for over a year now, mostly for small businesses and organizations. I've worked on a wide range of projects for clients all over the world."
-            }
-        }
-    },
-    "projects": {
-        "title": "Featured Projects",
-        "data": {
-            "filmpassport": {
-              "title": "Film Passport",
-              "description": "Film Passport is a web application that allows users to browse popular movies, search for movies, and add movies to their favorites list. Each movie has its own dedicated page with a description, trailer, and recommended similar movies.",
-              "live": "https://film-passport.netlify.app/",
-              "repository": "https://github.com/Ripdiegozz/FilmPassport",
-              "tech": "react,nextjs,tailwindcss,js,css,html",
-              "why": {
-                "title": "Why I built this project?", 
-                "data":"I developed Film Passport to enhance my skills in web development and to create a platform where users can discover and bookmark their favorite movies. This project allowed me to apply my knowledge of React, Next.js, and Tailwind CSS in a practical setting."
-              },
-              "learned": {
-                "title": "What I learned: ",
-                "data": "Developing Film Passport improved my abilities in creating responsive user interfaces, managing state in React, and optimizing data flow. I gained experience in implementing search functionality, fetching data from an API, and creating a seamless user experience."
-              }
-            },
-            "bluebyte": {
-              "title": "Bluebyte",
-              "description": "Bluebyte is an e-commerce website utilizing HTML, CSS, TailwindCSS, JavaScript, React.js, React Hooks, Next.js, Sanity, and Stripe. The project features a functional shopping cart, a product quantity selector, and payments made through Stripe.",
-              "repository": "https://github.com/Ripdiegozz/BluebyteStore",
-              "live": "https://bluebyte-store.vercel.app/",
-              "tech": "react,nextjs,tailwindcss,ts,js,css,html",
-              "why": {
-                "title": "Why I built this project?", 
-                "data":"Bluebyte was created to deepen my understanding of e-commerce development and payment integration. I aimed to build a functional online store with modern technologies and an intuitive user interface."
-              },
-              "learned": {
-                "title": "What I learned: ",
-                "data": "Developing Bluebyte expanded my knowledge of building secure and efficient e-commerce platforms. I gained practical experience in implementing payment gateways, managing state in React, and enhancing the overall user shopping experience."
-              }
-            },
-            "notewave": {
-              "title": "Notewave",
-              "description": "Notewave is your go-to digital hub for capturing and sharing ideas effortlessly. Whether you're a creative thinker or meticulous planner, Notewave adapts to your unique style. It's a blend of organization and creativity designed to simplify your digital life, putting your ideas in the spotlight for the world to see.",
-              "repository": "https://github.com/Ripdiegozz/Notewave",
-              "live": "https://notewave-lake.vercel.app/",
-              "tech": "react,nextjs,tailwindcss,ts,js,css,html",
-              "why": {
-                "title": "Why I built this project?",
-                "data": "Notewave was born out of a personal need for a versatile note-taking application. I wanted to create a platform that seamlessly combines organization and creativity. This project aimed to simplify digital note-taking and idea sharing."
-              },
-              "learned": {
-                "title": "What I learned: ",
-                "data": "Building Notewave honed my skills in creating feature-rich applications. I learned to implement rich text editing, task management features, and responsive design. This project improved my abilities in optimizing user workflows and creating a seamless user experience."
-              }
-            },
-            "eden": {
-              "title": "Eden",
-              "description": "Eden is a community-driven chat application built to bring conversations to life in a vibrant virtual space. Connect with friends, share ideas, and explore a new realm of online communication. Join the EDEN experience today!",
-              "repository": "https://github.com/Ripdiegozz/Eden",
-              "live": "https://eden-coral.vercel.app/",
-              "tech": "react,nextjs,tailwindcss,js,ts,planetscale,mysql,prisma,css,html",
-              "why": {
-                "title": "Why I built this project?",
-                "data": "Eden was conceived with the goal of creating a dynamic and engaging community chat platform. I wanted to provide users with a vibrant virtual space for meaningful conversations and idea sharing. This project aimed to explore advanced technologies for real-time communication."
-              },
-              "learned": {
-                "title": "What I learned: ",
-                "data": "Developing Eden provided me with insights into real-time chat functionality, database management with MySQL and Prisma, and the intricacies of building a community-driven application. I gained experience in optimizing data flow, implementing secure authentication, and fostering user engagement in virtual communities."
-              }
-            }
-          }
-    },
-    "contact": {
-        "title": "Have an idea?",
-        "subtitle": "Let's get in touch!"
-    },
-    "cv": {
-        "url": "/Diego_Garcia_CV_EN.pdf"
-    },
-    "meta":{
-        "title": "Diego Garcia - Software Developer",
-        "description": "As a versatile Software Developer and Analyst, I bring a unique blend of technical proficiency and analytical insight to digital projects. Specializing in creating intuitive and visually appealing user interfaces, I am dedicated to delivering seamless user experiences. With a keen eye for detail, I analyze software requirements, design efficient solutions, and implement robust code. Explore my portfolio to witness the intersection of creativity and functionality, showcasing my commitment to building innovative and user-centric web applications.",
-        "keywords": "Front-End Developer, Software Analyst, Software Developer, Web Developer, Web Designer, HTML, CSS, JavaScript, React, Next.js, TailwindCSS, Sanity, Stripe, Git, GitHub, Vercel, Freelance, Colombia, Node.js, Express.js",
-        "author": "Diego Garcia",
-        "url": "https://dagadev.vercel.app/",
-        "twitter": "@Ripdiegozz"
+        "date": "Jul 2023 - Present",
+        "description": "As a freelance front-end developer, I collaborate with clients to bring their digital visions to life. I specialize in creating visually appealing and user-friendly websites, ensuring a seamless user experience. My projects range from e-commerce platforms to community-driven chat applications, each tailored to meet the unique needs of my clients. I leverage a variety of technologies, including React, Next.js, Tailwind CSS, and Prisma, to build modern and responsive web applications. My work is characterized by a keen attention to detail, a passion for innovation, and a commitment to delivering high-quality results."
+      }
     }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "data": {
+      "filmpassport": {
+        "title": "Film Passport",
+        "description": "Film Passport is a web application that allows users to browse popular movies, search for movies, and add movies to their favorites list. Each movie has its own dedicated page with a description, trailer, and recommended similar movies.",
+        "live": "https://film-passport.netlify.app/",
+        "repository": "https://github.com/Ripdiegozz/FilmPassport",
+        "tech": "react,nextjs,tailwindcss,js,css,html",
+        "why": {
+          "title": "Why I built this project?",
+          "data": "I developed Film Passport to enhance my skills in web development and to create a platform where users can discover and bookmark their favorite movies. This project allowed me to apply my knowledge of React, Next.js, and Tailwind CSS in a practical setting."
+        },
+        "learned": {
+          "title": "What I learned: ",
+          "data": "Developing Film Passport improved my abilities in creating responsive user interfaces, managing state in React, and optimizing data flow. I gained experience in implementing search functionality, fetching data from an API, and creating a seamless user experience."
+        }
+      },
+      "bluebyte": {
+        "title": "Bluebyte",
+        "description": "Bluebyte is an e-commerce website utilizing HTML, CSS, TailwindCSS, JavaScript, React.js, React Hooks, Next.js, Sanity, and Stripe. The project features a functional shopping cart, a product quantity selector, and payments made through Stripe.",
+        "repository": "https://github.com/Ripdiegozz/BluebyteStore",
+        "live": "https://bluebyte-store.vercel.app/",
+        "tech": "react,nextjs,tailwindcss,ts,js,css,html",
+        "why": {
+          "title": "Why I built this project?",
+          "data": "Bluebyte was created to deepen my understanding of e-commerce development and payment integration. I aimed to build a functional online store with modern technologies and an intuitive user interface."
+        },
+        "learned": {
+          "title": "What I learned: ",
+          "data": "Developing Bluebyte expanded my knowledge of building secure and efficient e-commerce platforms. I gained practical experience in implementing payment gateways, managing state in React, and enhancing the overall user shopping experience."
+        }
+      },
+      "notewave": {
+        "title": "Notewave",
+        "description": "Notewave is your go-to digital hub for capturing and sharing ideas effortlessly. Whether you're a creative thinker or meticulous planner, Notewave adapts to your unique style. It's a blend of organization and creativity designed to simplify your digital life, putting your ideas in the spotlight for the world to see.",
+        "repository": "https://github.com/Ripdiegozz/Notewave",
+        "live": "https://notewave-lake.vercel.app/",
+        "tech": "react,nextjs,tailwindcss,ts,js,css,html",
+        "why": {
+          "title": "Why I built this project?",
+          "data": "Notewave was born out of a personal need for a versatile note-taking application. I wanted to create a platform that seamlessly combines organization and creativity. This project aimed to simplify digital note-taking and idea sharing."
+        },
+        "learned": {
+          "title": "What I learned: ",
+          "data": "Building Notewave honed my skills in creating feature-rich applications. I learned to implement rich text editing, task management features, and responsive design. This project improved my abilities in optimizing user workflows and creating a seamless user experience."
+        }
+      },
+      "eden": {
+        "title": "Eden",
+        "description": "Eden is a community-driven chat application built to bring conversations to life in a vibrant virtual space. Connect with friends, share ideas, and explore a new realm of online communication. Join the EDEN experience today!",
+        "repository": "https://github.com/Ripdiegozz/Eden",
+        "live": "https://eden-coral.vercel.app/",
+        "tech": "react,nextjs,tailwindcss,js,ts,planetscale,mysql,prisma,css,html",
+        "why": {
+          "title": "Why I built this project?",
+          "data": "Eden was conceived with the goal of creating a dynamic and engaging community chat platform. I wanted to provide users with a vibrant virtual space for meaningful conversations and idea sharing. This project aimed to explore advanced technologies for real-time communication."
+        },
+        "learned": {
+          "title": "What I learned: ",
+          "data": "Developing Eden provided me with insights into real-time chat functionality, database management with MySQL and Prisma, and the intricacies of building a community-driven application. I gained experience in optimizing data flow, implementing secure authentication, and fostering user engagement in virtual communities."
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Have an idea?",
+    "subtitle": "Let's get in touch!"
+  },
+  "cv": {
+    "text": "Want to know more about my work experience and education? Check out my CV.",
+    "url": "/Diego_Garcia_CV_EN.pdf"
+  },
+  "meta": {
+    "title": "Diego Garcia - Software Developer",
+    "description": "As a versatile Software Developer and Analyst, I bring a unique blend of technical proficiency and analytical insight to digital projects. Specializing in creating intuitive and visually appealing user interfaces, I am dedicated to delivering seamless user experiences. With a keen eye for detail, I analyze software requirements, design efficient solutions, and implement robust code. Explore my portfolio to witness the intersection of creativity and functionality, showcasing my commitment to building innovative and user-centric web applications.",
+    "keywords": "Front-End Developer, Software Analyst, Software Developer, Web Developer, Web Designer, HTML, CSS, JavaScript, React, Next.js, TailwindCSS, Sanity, Stripe, Git, GitHub, Vercel, Freelance, Colombia, Node.js, Express.js",
+    "author": "Diego Garcia",
+    "url": "https://dagadev.vercel.app/",
+    "twitter": "@Ripdiegozz"
+  }
 }
