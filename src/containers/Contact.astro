@@ -2,18 +2,18 @@
 import { t } from "i18next";
 ---
 
-<section class="px-4 mt-6 pb-10 pt-14 bg-[--eva-color]" id="contact">
+<section class="px-4 pb-10 pt-14 bg-[4831d4]" id="contact">
   <div class="container mx-auto">
-    <h2 class="text-4xl text-[#4831d4] font-bold text-center reveal">
+    <h2 class="text-4xl text-white font-bold text-center reveal">
       {t("contact.title")}
       <br />
-      <span class="text-[#4831d4]">{t("contact.subtitle")}</span>
+      <span class="text-white">{t("contact.subtitle")}</span>
     </h2>
 
     <ul
-      class="flex flex-wrap text-[#4831d4] w-full justify-around items-center pt-8 md:justify-center md:gap-12"
+      class="flex flex-wrap text-white w-full justify-around items-center pt-8 md:justify-center md:gap-12"
     >
-      <li class="reveal hover:text-[4831d4]">
+      <li class="reveal hover:text-[--eva-color] transition-colors">
         <a
           href="https://github.com/Ripdiegozz"
           target="_blank"
@@ -23,7 +23,7 @@ import { t } from "i18next";
           <i class="fa-brands fa-github hover:scale-110 transition"></i>
         </a>
       </li>
-      <li class="reveal">
+      <li class="reveal hover:text-[--eva-color] transition-colors">
         <a
           href="https://www.linkedin.com/in/dagadev/"
           target="_blank"
@@ -33,13 +33,13 @@ import { t } from "i18next";
           <i class="fa-brands fa-linkedin hover:scale-110 transition"></i>
         </a>
       </li>
-      <li class="reveal" aria-label="Mail me :)">
+      <li class="reveal hover:text-[--eva-color] transition-colors" aria-label="Mail me :)">
         <a href="mailto:dagadev@proton.me" target="_blank" class="text-5xl">
           <i class="fa-solid fa-square-envelope hover:scale-110 transition"></i>
         </a>
       </li>
       <li
-        class="reveal"
+        class="reveal hover:text-[--eva-color] transition-colors"
         aria-label="Reach me out at twitter"
       >
         <a

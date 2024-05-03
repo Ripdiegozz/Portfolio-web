@@ -1,8 +1,8 @@
 ---
 import { t } from "i18next";
 import { UsFlag } from "./Index";
-import esFlag from "/esFlag.svg";
-import logo from "/dagadev_logo.webp";
+import esFlag from "../assets/esFlag.svg";
+import logoDagadev from "../assets/dagadev_logo.webp"
 ---
 
 <header
@@ -12,7 +12,7 @@ import logo from "/dagadev_logo.webp";
     class="h-20 flex items-center justify-around gap-10 w-[80%] md:w-[100%] md:justify-around lg:justify-center"
   >
     <img
-      src={logo}
+      src={logoDagadev.src}
       alt="dagadev-logo"
       class="w-[130px] h-[110px] hover:translate-y-[-2px] transition-transform"
     />
@@ -90,7 +90,7 @@ import logo from "/dagadev_logo.webp";
         </li>
         <li>
           <a href="/es">
-            <img src={esFlag} class="h-5 w-8" alt="spain-flag">
+            <img src={esFlag.src} class="h-5 w-8" alt="spain-flag">
           </a>
         </li>
       </ul>

@@ -1,7 +1,7 @@
 ---
 import i18next, {t} from 'i18next';
 
-import logo from '/dagadev_logo.webp';
+import logo from '../assets/dagadev_logo.webp';
 
 import { Header, Footer } from '../components/Index';
 ---
@@ -11,7 +11,7 @@ import { Header, Footer } from '../components/Index';
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href={logo} />
+		<link rel="icon" type="image/svg+xml" href={logo.src} />
 		<meta name="description" content={t("meta.description")}>
 		<meta name="keywords" content={t("meta.keywords")}>
 		<meta name="author" content={t("meta.author")}>
